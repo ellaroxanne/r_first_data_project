@@ -1,0 +1,58 @@
+---
+title: "R Penguins"
+output: html_document
+date: "2025-06-27"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The first thing we need is <b> data</b>. For this project, we will be using R's penguins_raw dataset.
+
+In order to access this dataset, we must first download and install the R package "palmerpenguins." 
+A <b> package </b> is a set of functions, code, and data made by developers that other developers are free to download and use in their code. 
+Once we've installed the package, we then need to load it with the library() function.
+This simply means that we are telling our file-- in this case, our R environment-- to use the package in the project. 
+
+Think of it like this. You are the professor, and R is the student in a class. Telling R to install the package is like telling R to buy a textbook. Calling the library() function is telling the student to open and read the book so they can use it in class. 
+```{r}
+install.packages("remotes", repos = "https://cloud.r-project.org/")
+remotes::install_github("allisonhorst/palmerpenguins")
+```
+```{r}
+library("palmerpenguins") 
+```
+
+Great! Now that we've run this code, the library is ready for us to use.
+
+Now, let's get a feel for the data. To do this, we will run the head() function.
+
+```{r}
+head(penguins_raw)
+```
+
+Try it now, what do you see? 
+
+This type of table is called a <b> dataframe </b>. A dataframe is not unlike a table or an Excel spreadsheet. It is an easy way to organize the data in a two-dimensional structure. 
+The head() function returns the first 6 rows of a dataframe. 
+
+What information do you get from the head? What information do you not get? 
+
+<!-- Interactive box or something to brainstorm... it's like you can write bullet points--> 
+
+The first thing you should notice that you get from the head is the names of the columns of our dataframes, as well as their datatypes. 
+
+Another helpful function is the summary() function. 
+Let's try it out on our dataset:
+
+```{r}
+summary(penguins_raw)
+```
+
+This function helps us get a feel for our data in a different way. What information do you get here that you don't get from head()? 
+
+
+
+<!-- https://www.twilio.com/en-us/blog/developers/best-practices/dataset-questions-to-ask 
+This describes different things to do with a dataset. We will work with these questions from the framework.-->
