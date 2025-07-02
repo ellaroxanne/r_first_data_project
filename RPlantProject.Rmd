@@ -1,0 +1,106 @@
+---
+title: "RPlantsDraft1"
+output: html_document
+date: "2025-07-02"
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<!-- 
+This R Markdown document is made interactive using Shiny. Unlike the more traditional workflow of creating static reports, you can now create documents that allow your readers to change the assumptions underlying your analysis and see the results immediately. 
+
+To learn more, see [Interactive Documents](http://rmarkdown.rstudio.com/authoring_shiny.html).
+
+## Inputs and Outputs
+
+You can embed Shiny inputs and outputs in your document. Outputs are automatically updated whenever inputs change.  This demonstrates how a standard R plot can be made interactive by wrapping it in the Shiny `renderPlot` function. The `selectInput` and `sliderInput` functions create the input widgets used to drive the plot.
+
+```{r eruptions, echo=FALSE}
+inputPanel(
+  selectInput("n_breaks", label = "Number of bins:",
+              choices = c(10, 20, 35, 50), selected = 20),
+  
+  sliderInput("bw_adjust", label = "Bandwidth adjustment:",
+              min = 0.2, max = 2, value = 1, step = 0.2)
+)
+
+renderPlot({
+  hist(faithful$eruptions, probability = TRUE, breaks = as.numeric(input$n_breaks),
+       xlab = "Duration (minutes)", main = "Geyser eruption duration")
+  
+  dens <- density(faithful$eruptions, adjust = input$bw_adjust)
+  lines(dens, col = "blue")
+})
+```
+
+## Embedded Application
+
+It's also possible to embed an entire Shiny application within an R Markdown document using the `shinyAppDir` function. This example embeds a Shiny application located in another directory:
+
+```{r tabsets, echo=FALSE}
+shinyAppDir(
+  system.file("examples/06_tabsets", package = "shiny"),
+  options = list(
+    width = "100%", height = 550
+  )
+)
+```
+
+Note the use of the `height` parameter to determine how much vertical space the embedded application should occupy.
+
+You can also use the `shinyApp` function to define an application inline rather then in an external directory.
+
+In all of R code chunks above the `echo = FALSE` attribute is used. This is to prevent the R code within the chunk from rendering in the document alongside the Shiny components. -->
+
+# Introduction
+
+For this project, we will be working with data on invasive plant species, originally provided by []. 
+
+First, we need to get the data onto our computer and into R so that we can use it. 
+
+```{r}
+plants_data <- read.csv("https://raw.githubusercontent.com/ellaroxanne/r_plants_project/refs/heads/main/HTLN_InvasivePlants_Monitoring.csv")
+```
+
+Our data is stored as a .csv file. Csv stands for "comma-separated values." R, and many other computer programs, does a good job at organizing a csv file into a dataframe, which is similar to an Excel spreadsheet or other tabular (table-like) form of organizing data. 
+
+Let's start by getting a basic feel for the data with the head() function, which shows the first 6 rows of the data table.
+
+```{r}
+head(plants_data)
+```
+Clearly, this data shows information on various occurrences of invasive plant species across various national parks. 
+
+Before we actually get to working with the data, it's best practice as a data scientist to consider what kind of data you are working with. Numbers don't appear out of a vacuum. 
+
+Here are some relevant links to help you answer the following questions: 
+
+## How was the data compiled?
+ [text box to answer]
+ 
+## Is the data accurate?
+[text box to answer]
+
+Great! Now that we've affirmed the quality of our data, let's get down to what we're really interested in: the data itself.
+
+We've already done the head() function, which gives us a general idea of what kind of variables (columns) are being measured. A <b> variable </b> is a quantity or quality of each data point that is measured. 
+
+Especially with large data files such as this one, it can be difficult to fully wrap your head around the head function. Here, we can use the colnames() function.
+
+<!-- I want the user to be able to type this function in -->
+
+```{r}
+colnames(plants_data)
+```
+
+Great, now we've got a convenient list of each variable that was collected for this data set. 
+
+Some of these variables, such as "ParkName" or "ScientificName" are fairly intuitive. 
+Some are not. 
+
+<!-- Exercise: Identify in 1-2 sentences what each variable does-->
+
+Now that we know the data, we'll do some summary statistics in the next module.
