@@ -40,13 +40,13 @@ Before we actually get to working with the data, it's best practice as a data sc
 Here are some relevant links to help you answer the following questions:
 
 ```{r compiled_how, echo = FALSE}
-open_ended <- function(input) {
-  return(mark_as(TRUE))
+compiled_eval <- function(input) {
+  return(mark_as(TRUE, messages = "Placeholder for a sample answer"))
 }
 
 question_text(
   "How was the data compiled?",
-  answer_fn(open_ended),
+  answer_fn(compiled_eval),
   allow_retry = TRUE
 )
 ```
