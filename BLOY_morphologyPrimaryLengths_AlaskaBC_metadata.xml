@@ -1,0 +1,1028 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Roodenrijs, Hannah (ORCID: 0009-0003-1807-2045)</origin>
+        <origin>Green, David (ORCID: 0000-0001-7284-1819)</origin>
+        <origin>Esler, Daniel (ORCID: 0000-0001-5501-4555)</origin>
+        <pubdate>20240514</pubdate>
+        <title>Black Oystercatcher Morphology and Primary Feather Lengths in Alaska and British Columbia, 2019-2022</title>
+        <geoform>tabular digital data, digital images</geoform>
+        <pubinfo>
+          <pubplace>Anchorage, Alaska</pubplace>
+          <publish>U.S. Geological Survey, Alaska Science Center</publish>
+        </pubinfo>
+        <othercit>Suggested Citation: Roodenrijs, H., Green, D., Esler, D., 2024. Black Oystercatcher morphology and primary feather lengths in Alaska and British Columbia, 2019-2022: U.S. Geological Survey data release, https://doi.org/10.5066/P1KWBDRY</othercit>
+        <onlink>https://doi.org/10.5066/P1KWBDRY</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>These data provide morphological measurements and primary feather length measurements of Black Oystercatcher (Haematopus bachmani) captured at several sites across Alaska and British Columbia between 2019 and 2022. The first table contains mass and morphological measurements of body and bill size. The second table provides lengths of individual primary feathers measured from folded wing photographs using a computer software. These feather lengths are to be used in a size-constrained components analysis to calculate wing shape such as pointedness and convexity.</abstract>
+      <purpose>These data were collected as part of a broader project studying Black Oystercatcher morphology, movement, and diet across Alaska, USA and British Columbia, Canada. Photographs of wings were taken in the field of folded wings on a board with a ruler for scale. The primary length measurements were collected using computer software analysis from wing photos.</purpose>
+      <supplinf>This data release provides only measurement data of adult Black Oystercatchers. Users should be aware that other data or samples from some of the individual birds documented herein may exist. Other data may be maintained by the data collectors, published in reports and scientific articles, or available in other publicly accessible data products, such as U.S. Geological Survey data releases: Black Oystercatcher nest and diet data: https://doi.org/10.5066/F7WH2N5Q and juvenile shorebird morphological data: https://doi.org/10.5066/P9ZH3JNQ.</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>20190228</begdate>
+          <enddate>20220715</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>observed</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <descgeog>Geographic extent from Southcentral Alaska, USA to southern British Columbia, Canada</descgeog>
+      <bounding>
+        <westbc>-159.6094</westbc>
+        <eastbc>-122.1680</eastbc>
+        <northbc>62.0627</northbc>
+        <southbc>47.3983</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>USGS Metadata Identifier</themekt>
+        <themekey>USGS:66353317d34edc29f409d8a6</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>Biota</themekey>
+        <themekey>Environment</themekey>
+      </theme>
+      <theme>
+        <themekt>NASA GCMD Earth Science Keyword Thesaurus</themekt>
+        <themekey>Animals/Vertebrates</themekey>
+        <themekey>Birds</themekey>
+        <themekey>Sandpipers</themekey>
+      </theme>
+      <theme>
+        <themekt>USGS CSA Biocomplexity Thesaurus</themekt>
+        <themekey>Migratory birds</themekey>
+        <themekey>Animal morphology</themekey>
+        <themekey>Avian physiology</themekey>
+        <themekey>Body size</themekey>
+        <themekey>Body weight</themekey>
+        <themekey>Sexual dimorphism</themekey>
+        <themekey>Age structure</themekey>
+      </theme>
+      <theme>
+        <themekt>USGS Thesaurus</themekt>
+        <themekey>Capturing (animals)</themekey>
+        <themekey>Scientific interpretation</themekey>
+        <themekey>Marine biology</themekey>
+        <themekey>Ecology</themekey>
+        <themekey>Coastal ecosystems</themekey>
+        <themekey>Marine ecosystems</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>Nearshore marine ecosystem</themekey>
+        <themekey>Wing shape</themekey>
+      </theme>
+      <place>
+        <placekt>USGS Geographic Names Information System (GNIS)</placekt>
+        <placekey>Alaska</placekey>
+        <placekey>Kachemak Bay</placekey>
+        <placekey>Prince William Sound</placekey>
+      </place>
+      <place>
+        <placekt>Protected Areas Database of the United States (PAD-US)</placekt>
+        <placekey>Kenai Fjords National Park</placekey>
+        <placekey>Katmai National Park and Preserve</placekey>
+      </place>
+      <place>
+        <placekt>NGA GEOnet Names Server</placekt>
+        <placekey>Canada</placekey>
+        <placekey>British Columbia</placekey>
+        <placekey>Pacific Rim National Park</placekey>
+        <placekey>Salish Sea</placekey>
+        <placekey>Gulf Islands</placekey>
+        <placekey>Haida Gwaii</placekey>
+      </place>
+    </keywords>
+    <taxonomy>
+      <keywtax>
+        <taxonkt>None</taxonkt>
+        <taxonkey>Black Oystercatcher</taxonkey>
+        <taxonkey>Haematopus bachmani</taxonkey>
+      </keywtax>
+      <taxonsys>
+        <classsys>
+          <classcit>
+            <citeinfo>
+              <origin>ITIS Integrated Taxonomic Information System</origin>
+              <pubdate>Unknown</pubdate>
+              <title>ITIS Integrated Taxonomic Information System</title>
+              <geoform>online database</geoform>
+              <pubinfo>
+                <pubplace>online</pubplace>
+                <publish>ITIS-North America</publish>
+              </pubinfo>
+              <othercit>Details of taxonomic rank above the class aves retrieved March 12, 2024, from the ITIS online database  https://www.itis.gov</othercit>
+              <onlink>https://doi.org/10.5066/F7KH0KBK</onlink>
+            </citeinfo>
+          </classcit>
+          <classmod>Taxonomic rank above the class aves (birds) follow the most current (as of March 2024) taxonomic designation by the ITIS.</classmod>
+        </classsys>
+        <taxonpro>Species were identified by skilled observers in the field based on plumage, behavior, and vocalization.</taxonpro>
+        <taxoncom>Taxonomy is complete for all samples. No vouchers were collected.</taxoncom>
+      </taxonsys>
+      <taxoncl>
+        <taxonrn>Kingdom</taxonrn>
+        <taxonrv>Animalia</taxonrv>
+        <taxoncl>
+          <taxonrn>Subkingdom</taxonrn>
+          <taxonrv>Bilateria</taxonrv>
+          <taxoncl>
+            <taxonrn>Infrakingdom</taxonrn>
+            <taxonrv>Deuterostomia</taxonrv>
+            <taxoncl>
+              <taxonrn>Phylum</taxonrn>
+              <taxonrv>Chordata</taxonrv>
+              <taxoncl>
+                <taxonrn>Subphylum</taxonrn>
+                <taxonrv>Vertebrata</taxonrv>
+                <taxoncl>
+                  <taxonrn>Infraphylum</taxonrn>
+                  <taxonrv>Gnathostomata</taxonrv>
+                  <taxoncl>
+                    <taxonrn>Superclass</taxonrn>
+                    <taxonrv>Tetrapoda</taxonrv>
+                    <taxoncl>
+                      <taxonrn>Class</taxonrn>
+                      <taxonrv>Aves</taxonrv>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Charadriiformes</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Haematopodidae</taxonrv>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Haematopus</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Haematopus bachmani</taxonrv>
+                              <common>TSN: 176475</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                    </taxoncl>
+                  </taxoncl>
+                </taxoncl>
+              </taxoncl>
+            </taxoncl>
+          </taxoncl>
+        </taxoncl>
+      </taxoncl>
+    </taxonomy>
+    <accconst>No access constraints.</accconst>
+    <useconst>No use constraints. We request that the suggested citation of this USGS data release be included in any publications that reference or utilize these data.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>David Green</cntper>
+          <cntorg>Simon Fraser University</cntorg>
+        </cntperp>
+        <cntaddr>
+          <addrtype>Mailing and Physical</addrtype>
+          <address>8888 University Drive</address>
+          <city>Burnaby</city>
+          <state>British Columbia</state>
+          <postal>V5A 1S6</postal>
+          <country>Canada</country>
+        </cntaddr>
+        <cntvoice>(778)782-3981</cntvoice>
+        <cntemail>djgreen@sfu.ca</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>Contributors to field collection of data include L. Ware, C. Rankin, B. Robinson, J. Kemp, M. Maftei, A. Domalik, N. Clyde, V. Pattison, J. Pattison, R. Dickson, M. Peck, C. Rock, S. Stark, L. McDuffie, F. Gerarty, K. Corliss, J. Beaubier-Brulotte, and M. Scott.</datacred>
+    <native>The original data are stored as a Microsoft Access database in a Windows operating environment but has been exported as comma separated text files for dissemination.</native>
+    <crossref>
+      <citeinfo>
+        <origin>Roodenrijs, H.</origin>
+        <origin>Ware, L.</origin>
+        <origin>Rankin, C.</origin>
+        <origin>Maftei, M.</origin>
+        <origin>Hipfner, J.M.</origin>
+        <origin>Robinson, B.H.</origin>
+        <origin>Esler, D.</origin>
+        <origin>Coletti, H.</origin>
+        <origin>Green, D.J.</origin>
+        <pubdate>2024</pubdate>
+        <title>Latitudinal Gradients and Sex-Differences in Morphology of the Black Oystercatcher (Haematopus bachmani)</title>
+        <geoform>journal article</geoform>
+        <serinfo>
+          <sername>Ecololgy and Evolution</sername>
+          <issue>14(9):e70115</issue>
+        </serinfo>
+        <pubinfo>
+          <pubplace>online</pubplace>
+          <publish>Wiley</publish>
+        </pubinfo>
+        <othercit>Roodenrijs, H., Ware, L., Rankin, C., Maftei, M., Hipfner, J.M., Robinson, B.H., Esler, D., Coletti, H., Green, D.J., 2024, Latitudinal gradients and sex-differences in morphology of the Black Oystercatcher (Haematopus bachmani). Ecology and Evolution 14(9):e70115. https://doi.org/10.1002/ece3.70115</othercit>
+        <onlink>https://doi.org/10.1002/ece3.70115</onlink>
+      </citeinfo>
+    </crossref>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Individual sample IDs, collection dates, sampling locations, band IDs, and other values were cross-checked and verified with field worksheets.</attraccr>
+    </attracc>
+    <logic>Attribute values fall within expected ranges and data were proofed for the presence of duplication and omission. Blank cells or NA indicate that no data are available for a particular sample (see Entity and Attribute definitions for details).</logic>
+    <complete>The dataset is complete, no data were omitted.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>Locations determined by handheld GPS; accuracy estimated to be within 5 meters.</horizpar>
+      </horizpa>
+    </posacc>
+    <lineage>
+      <procstep>
+        <procdesc>FIELD:
+		
+			      Captures of Black Oystercatchers were conducted in spring and summer in British Columbia (March for spring, May-July for Summer) and summer in Alaska (May-July). Both active and passive capture techniques were employed using standard noose mat and noose line capture methods along with playback and decoys. Upon capture, individuals were aged by plumage and bill color and sexed by the extent of a black fleck in their iris (Guzzetti et al. 2008). Morphological measurements were taken including the length of the unflattened wing chord, tail, middle toe, tarsus, and five bill measurements (exposed culmen length, length of head and bill, bill depth and width at the end of the nares, and depth of the bill tip). Two tarsus measurements were taken for comparison, diagonal tarsus from the interstitial joint to the last leg scale before the toes and maximum tarsus length from the lower hind edge of the tibia to the heel of the foot. Photos were taken of each wing in the folded position, flattened on a board and with a ruler included for scale.</procdesc>
+        <procdate>Unknown</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>LAB:
+		
+			      Wing photos were analyzed in the lab to collect lengths of each primary feather using ImageJ software (Schindelin et al. 2012). The primary feathers were measured from the folded wing photos by measuring the difference between the tips of each successive feather. Due to the method of measurement, these estimated measurements include the length of the area between where the feather inserts and the top of the wing. Therefore, these measurements may be longer than others using a different technique and represent a relative primary length rather than a true length of the feather. For convenience, we refer to and label these measurements as primary lengths. Because the 9th primary is the longest, the 10th was never visible in the folded wing photos. As such, we determined the length of the 10th by subtracting the difference between primary 9 and 10 (measured in the field) from the wing length. The length of the wing as measured in the field was used as the 9th primary length. The length of primary 8 was measured by subtracting the difference between feathers 9 and 8 (measured using image) from the length of feather 9, and this process was repeated through the last primary. Due to molt, individuals were often missing several innermost primaries, and primary one was often covered by the secondary feathers. Therefore, only visible primaries and those that appeared to be full length were included in measurements. Each individual’s wing was measured twice and the average between the two estimates was included in this final dataset.</procdesc>
+        <procdate>Unknown</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>LITERATURE CITED:
+		
+	    Guzzetti, B.M., Talbot, S.L., Tessler, D.F., Gill, V.A., and  Murphy, E.C., 2008. Secrets in the eyes of Black Oystercatchers: a new sexing technique. Journal of Field Ornithology, 79(2):215–223. https://doi.org/10.1111/j.1557-9263.2008.00167.x
+		
+		Schindelin, J., Arganda-Carreras, I., Frise, E., Kaynig, V., Longair, M., Pietzsch, T., Preibisch, S., Rueden, C., Saalfeld, S., Schmid, B., Tinevez, J.-Y., White, D.J., Hartenstein, V., Eliceiri, K., Tomancak, P., Cardona, A., 2012. Fiji: an open-source platform for biological-image analysis. Nature Methods, 9(7):676–682. https://doi.org/10.1038/nmeth.2019
+		
+		Stojanovic, D., Neeman, T., Heinsohn, R., 2020. Overlap in the wing shape of migratory, nomadic and sedentary grass parrots. Journal of Avian Biology 51(12). https://doi.org/10.1111/jav.02586</procdesc>
+        <procdate>Unknown</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <indspref>Site names are listed to describe generalized Black Oystercatcher capture locations.</indspref>
+    <direct>Point</direct>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>0.000001</latres>
+        <longres>0.000001</longres>
+        <geogunit>Decimal degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>World Geodetic System of 1984 (WGS84)</horizdn>
+        <ellips>World Geodetic System of 1984 (WGS84)</ellips>
+        <semiaxis>6378137</semiaxis>
+        <denflat>298.257223563</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>BLOY_morphology_AlaskaBC.csv</enttypl>
+        <enttypd>Table containing morphological measurements of adult Black Oystercatchers captured in Alaska and British Columbia from 2019-2022. Presented in a Comma Separated Value (CSV) formatted table.</enttypd>
+        <enttypds>Author defined</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>Region</attrlabl>
+        <attrdef>The general location where morphological measurements were collected from the captured Black Oystercatchers.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Alaska</edomv>
+            <edomvd>Black Oystercatcher captured in Alaska, USA.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>British Columbia</edomv>
+            <edomvd>Black Oystercatcher captured in British Columbia, Canada.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Site</attrlabl>
+        <attrdef>The common geographic names for locations where morphological data were collected.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Pacific Rim</edomv>
+            <edomvd>Pacific Rim National Park Reserve, British Columbia (approximately 48.88 N, 125.28 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Salish Sea</edomv>
+            <edomvd>Gulf Islands and Sunshine Coast Regional District, British Columbia (approximately 49.19 N, 123.65 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Haida Gwaii</edomv>
+            <edomvd>Haida Gwaii Archipelago, British Columbia (approximately 53.22 N, 132.10 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Kenai Fjords</edomv>
+            <edomvd>Kenai Fjords National Park, Alaska (approximately 59.78 N, 149.71 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>W Prince William Sound</edomv>
+            <edomvd>Western Prince William Sound, Alaska (approximately 60.75 N, 147.85 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Kachemak Bay</edomv>
+            <edomvd>Kachemak Bay, Alaska (approximately 59.58 N, 151.49 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Katmai</edomv>
+            <edomvd>Katmai National Park and Preserve, Alaska (approximately 58.12 N, 154.41 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Latitude</attrlabl>
+        <attrdef>The coordinate that specifies the north–south position of the location where the morphological data were collected. Blank cells indicate that the latitude was not recorded.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>48.67</rdommin>
+            <rdommax>60.46</rdommax>
+            <attrunit>Decimal degrees</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Longitude</attrlabl>
+        <attrdef>The coordinate that specifies the east–west position of the location where the morphological data were collected. Blank cells indicate that the longitude was not recorded.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>-154.51</rdommin>
+            <rdommax>-123.1</rdommax>
+            <attrunit>Decimal degrees</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Date</attrlabl>
+        <attrdef>The year, month, and day when the morphological data were collected.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>2019-02-28</rdommin>
+            <rdommax>2022-07-19</rdommax>
+            <attrunit>Date (YYYY-MM-DD)</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Season</attrlabl>
+        <attrdef>A code describing the season when the Black Oystercatcher was captured and morphological data collected.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>0</edomv>
+            <edomvd>Spring capture encompassing dates between February and April.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>1</edomv>
+            <edomvd>Summer capture encompassing dates between May and July.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Band_number</attrlabl>
+        <attrdef>The suffix of the metal leg band attached to each individual Black Oystercatcher at the time of initial capture.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <udom>The suffix of the metal leg band attached to each individual Black Oystercatcher</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Alpha</attrlabl>
+        <attrdef>Unique identifier of each individual Black Oystercatcher. Colored leg band with engraved alphanumeric symbols were applied to the bird. This directly corresponds to the 'Alpha' attribute in table "BLOY_wingMeasurements_AlaskaBC.csv" included with this data release.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <udom>Unique identifier of each individual Black Oystercatcher.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Age_class</attrlabl>
+        <attrdef>The age class of the individual Black Oystercatcher. Age class was determined based on plumage, bill color, and eye color.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>ASY</edomv>
+            <edomvd>After second year; individual bird was in 'adult' plumage and had a bright red and yellow bill as well as a bright yellow iris.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>SY</edomv>
+            <edomvd>Second year; individual bird had both adult and retained juvenile plumage. Bill dull to bright red with distinct dark tip and iris brownlish to dull yellow.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>TY</edomv>
+            <edomvd>Third year; individual bird was in 'adult' plumage but had dusky brown tinge to bill and iris dull to bright yellow.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Eye_fleck</attrlabl>
+        <attrdef>Assignment of the size of the black eye fleck found in the iris(s) of each Black Oystercatcher, based on Figure 1 in Guzetti et al. 2008. If two codes are assigned, this suggests that each eye had different sized flecks. Blank cells indicate that an eye fleck size was not assigned.</attrdef>
+        <attrdefs>Guzetti et al. 2008</attrdefs>
+        <attrdomv>
+          <udom>Assignment of the size of the black eye fleck found in the iris(s) of each Black Oystercatcher, based on Figure 1 in Guzetti et al. 2008.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Sex</attrlabl>
+        <attrdef>Biological sex of individual Black Oystercatchers. Sex was determined based on eye fleck score, where females have larger eye flecks (category 2b-3c; Guzzetti et al. 2008), and males have smaller eye flecks (category 1a-2a; Guzzetti et al. 2008). Those with intermediate eye flecks (category 2) were assigned sex based on sex of mate and culmen length.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Male</edomv>
+            <edomvd>Identified as a male Black Oystercatcher.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Female</edomv>
+            <edomvd>Identified as a female Black Oystercatcher.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Bander</attrlabl>
+        <attrdef>Initials of the person who banded and measured the Black Oystercatcher.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>HR</edomv>
+            <edomvd>Hannah Roodenrijs</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>LW</edomv>
+            <edomvd>Lena Ware</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>BR</edomv>
+            <edomvd>Brian Robinson</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>CR</edomv>
+            <edomvd>Cole Rankin</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>MM</edomv>
+            <edomvd>Mark Maftei</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>JK</edomv>
+            <edomvd>Jesse Kemp</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Mass</attrlabl>
+        <attrdef>The body mass (grams) of an individual Black Oystercatcher. Blank cells indicate that the body mass was not recorded.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>495</rdommin>
+            <rdommax>720</rdommax>
+            <attrunit>Grams</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Wing</attrlabl>
+        <attrdef>The length (millimeters) of the wing of an individual Black Oystercatcher measured from the bend (i.e., wrist joint) to the tip of the longest primary feather. Measurements refer to the length of a folded, unflattened wing. Blank cells indicate that the wing length was not recorded.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>228</rdommin>
+            <rdommax>280</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Tail</attrlabl>
+        <attrdef>The length (millimeters) of the tail of an individual Black Oystercatcher measured from where tail feathers enter body to the end of the longest feather. Blank cells indicate that the tail length was not recorded.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>80</rdommin>
+            <rdommax>115</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Toe</attrlabl>
+        <attrdef>The length (millimeters) of the longest (middle) toe of an individual Black Oystercatcher measured from the base of the toe to the tip of the toe, nail not included. Blank cells indicate that the toe length was not recorded.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>39</rdommin>
+            <rdommax>50</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Tarsus</attrlabl>
+        <attrdef>The length (millimeters) of the diagonal tarsus of an individual Black Oystercatcher measured from the interstitial joint to the last leg scale before the toes. Blank cells indicate that the diagonal tarsus length was not recorded.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>47.1</rdommin>
+            <rdommax>61.3</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Max_tarsus</attrlabl>
+        <attrdef>The length (millimeters) of the maximum tarsus of an individual Black Oystercatcher measured from the lower hind edge of the tibia to the heel of the foot. Blank cells indicate that the maximum tarsus length was not recorded.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>53.2</rdommin>
+            <rdommax>69.7</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Culmen</attrlabl>
+        <attrdef>The length (millimeters) of the culmen of an individual Black Oystercatcher measured from the tip of the bill to the first feather on the upper mandible using calipers. Blank cells indicate that the culmen length was not recorded.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>64</rdommin>
+            <rdommax>86.8</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Head_bill</attrlabl>
+        <attrdef>The combined length (millimeters) of culmen and head of individual Black Oystercatcher measured from the tip of the bill to the back of the Occipital crest. Blank cells indicate that the head bill length was not recorded.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>107.5</rdommin>
+            <rdommax>137</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Bill_depth</attrlabl>
+        <attrdef>The depth (millimeters) of the bill at the distal end of the nares of an individual Black Oystercatcher. Blank cells indicate that the bill depth was not recorded.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>11.1</rdommin>
+            <rdommax>14.4</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Bill_width</attrlabl>
+        <attrdef>The width (millimeters) of the bill at the distal end of the nares of an individual Black Oystercatcher. Blank cells indicate that the bill width was not recorded.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>7.1</rdommin>
+            <rdommax>14.21</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Bill_tip</attrlabl>
+        <attrdef>The height (millimeters) of the tip of the culmen of an individual Black Oystercatcher. Blank cells indicate that the bill tip was not recorded.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>3.3</rdommin>
+            <rdommax>6.9</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>BLOY_wingMeasurements_AlaskaBC.csv</enttypl>
+        <enttypd>Table of measurements of primary feather lengths from photographs of wings of Black Oystercatcher in Alaska and British Columbia. Presented as a Comma Separated Value (CSV) file.</enttypd>
+        <enttypds>Author defined</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>Region</attrlabl>
+        <attrdef>The general location where morphological measurements were collected from the captured Black Oystercatchers.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Alaska</edomv>
+            <edomvd>Black Oystercatcher captured in Alaska, USA.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>British Columbia</edomv>
+            <edomvd>Black Oystercatcher captured in British Columbia, Canada.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Site</attrlabl>
+        <attrdef>The common geographic names for locations where morphological data were collected.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Pacific Rim</edomv>
+            <edomvd>Pacific Rim National Park Reserve, British Columbia (approximately 48.88 N, 125.28 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Salish Sea</edomv>
+            <edomvd>Gulf Islands and Sunshine Coast Regional District, British Columbia (approximately 49.19 N, 123.65 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Haida Gwaii</edomv>
+            <edomvd>Haida Gwaii Archipelago, British Columbia (approximately 53.22 N, 132.10 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Kenai Fjords</edomv>
+            <edomvd>Kenai Fjords National Park, Alaska (approximately 59.78 N, 149.71 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>W Prince William Sound</edomv>
+            <edomvd>Western Prince William Sound, Alaska (approximately 60.75 N, 147.85 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Kachemak Bay</edomv>
+            <edomvd>Kachemak Bay, Alaska (approximately 59.58 N, 151.49 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Katmai</edomv>
+            <edomvd>Katmai National Park and Preserve, Alaska (approximately 58.12 N, 154.41 W).</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Alpha</attrlabl>
+        <attrdef>Unique identifier of each individual Black Oystercatcher. Colored leg band with engraved alphanumeric symbols were applied to the bird. This directly corresponds to the 'Alpha' attribute in table "BLOY_morphology_AlaskaBC.csv" included with this data release.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <udom>Unique identifier of each individual Black Oystercatcher.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Sex</attrlabl>
+        <attrdef>Biological sex of individual Black Oystercatchers. Sex was determined based on eye fleck score, where females have larger eye flecks (category 2b-3c; Guzzetti et al. 2008), and males have smaller eye flecks (category 1a-2a; Guzzetti et al. 2008). Those with intermediate eye flecks (category 2) were assigned sex based on sex of mate and culmen length.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>M</edomv>
+            <edomvd>Identified as a male Black Oystercatcher.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>F</edomv>
+            <edomvd>Identified as a female Black Oystercatcher.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>P2</attrlabl>
+        <attrdef>The length (millimeters) of the 2nd primary feather of the wing of a Black Oystercatcher. See the 'Process Steps' section for an explaination of calulating primary feather lengths.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>NA</edomv>
+            <edomvd>The length of P2 could not be determined or was not recorded.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <rdom>
+            <rdommin>142.30</rdommin>
+            <rdommax>184.80</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>P3</attrlabl>
+        <attrdef>The length (millimeters) of the 3rd primary feather of the wing of a Black Oystercatcher. See the 'Process Steps' section for an explaination of calulating primary feather lengths.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>NA</edomv>
+            <edomvd>The length of P3 could not be determined or was not recorded.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <rdom>
+            <rdommin>163.79</rdommin>
+            <rdommax>197.00</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>P4</attrlabl>
+        <attrdef>The length (millimeters) of the 4th primary feather of the wing of a Black Oystercatcher. See the 'Process Steps' section for an explaination of calulating primary feather lengths.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>NA</edomv>
+            <edomvd>The length of P4 could not be determined or was not recorded.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <rdom>
+            <rdommin>159.28</rdommin>
+            <rdommax>231.74</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>P5</attrlabl>
+        <attrdef>The length (millimeters) of the 5th primary feather of the wing of a Black Oystercatcher. See the 'Process Steps' section for an explaination of calulating primary feather lengths.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>NA</edomv>
+            <edomvd>The length of P5 could not be determined or was not recorded.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <rdom>
+            <rdommin>189.84</rdommin>
+            <rdommax>243.68</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>P6</attrlabl>
+        <attrdef>The length (millimeters) of the 6th primary feather of the wing of a Black Oystercatcher. See the 'Process Steps' section for an explaination of calulating primary feather lengths.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>NA</edomv>
+            <edomvd>The length of P6 could not be determined or was not recorded.</edomvd>
+            <edomvds>Author defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <rdom>
+            <rdommin>202.79</rdommin>
+            <rdommax>256.58</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>P7</attrlabl>
+        <attrdef>The length (millimeters) of the 7th primary feather of the wing of a Black Oystercatcher. See the 'Process Steps' section for an explaination of calulating primary feather lengths.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>216.06</rdommin>
+            <rdommax>266.98</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>P8</attrlabl>
+        <attrdef>The length (millimeters) of the 8th primary feather of the wing of a Black Oystercatcher. See the 'Process Steps' section for an explaination of calulating primary feather lengths.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>226.67</rdommin>
+            <rdommax>276.12</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>P9</attrlabl>
+        <attrdef>The length (millimeters) of the 9th primary feather of the wing of a Black Oystercatcher. See the 'Process Steps' section for an explaination of calulating primary feather lengths.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>235.00</rdommin>
+            <rdommax>280.00</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>P10</attrlabl>
+        <attrdef>The length (millimeters) of the 10th primary feather of the wing of a Black Oystercatcher. See the 'Process Steps' section for an explaination of calulating primary feather lengths.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>231.60</rdommin>
+            <rdommax>274.30</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>P9_P10_diff</attrlabl>
+        <attrdef>The difference (millimeters) between the tip of the ninth primary (longest) and the tenth primary feather on the wing of an individual Black Oystercatcher.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>6</rdommax>
+            <attrunit>Millimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Assoc_imageID</attrlabl>
+        <attrdef>Name of the image from which the primary feather lengths were derived from.</attrdef>
+        <attrdefs>Author defined</attrdefs>
+        <attrdomv>
+          <udom>Name of the image from which the primary feather lengths were derived from.</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>BLOY_wingImages [FOLDER]</enttypl>
+        <enttypd>Folder containing digital photographs of wings from capture Black Oystercatchers. The main folder contains subfolders with reference to each region where the images were taken.
+        File naming convention: BLOY_wing_[ALPHA CODE]_[YYYYMMDD]: where ALPHA CODE = the Alpha Code corresponding to the attribute 'Alpha' in table "BLOY_wingMeasurements_AlaskaBC.csv", and YYYYMMDD = Year, month, and day the photograph was taken.</enttypd>
+        <enttypds>Author defined</enttypds>
+      </enttyp>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>BLOY_morphology_analysis.R</enttypl>
+        <enttypd>An annotated R script for executing manovas and linear mixed models to compare the morphology of six measurements (i.e., wing, tail, toe, diagonal tarsus, maximum tarsus, and mass) between populations of Black Oystercather in Alaska and British Columbia and to test for differences in morphology between capture locations. The R script is fully annotated.</enttypd>
+        <enttypds>Author defined</enttypds>
+      </enttyp>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>BLOY_wing_shape_analysis.R</enttypl>
+        <enttypd>An annotated R script for executing a size-constrained components analysis with the primary length measurement document to estimate a convexity and concavity score for each individual Black Oystercacther. These scores are then put into linear mixed models to test for differences between the sexes and between Alaska and British Columbia. The R script is fully annotated.</enttypd>
+        <enttypds>Stojanovic et al. 2020 and Author defined</enttypds>
+      </enttyp>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Geological Survey</cntorg>
+          <cntper>USGS ScienceBase Team</cntper>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>Mailing and Physical</addrtype>
+          <address>Denver Federal Center, Building 810, Mail Stop 302</address>
+          <city>Denver</city>
+          <state>Colorado</state>
+          <postal>80225</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>1-888-275-8747</cntvoice>
+        <cntemail>sciencebase@usgs.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <resdesc>The U.S. Geological Survey, Alaska Science Center is the authoritative source and distributor of these data.</resdesc>
+    <distliab>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey, no warranty expressed or implied is made regarding the display or utility of the data for other purposes or on all computer systems, nor shall the act of distribution constitute any such warranty. Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S. Government.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>CSV, JPG</formname>
+          <formcont>Tabular data in CSV format and photos in JPG format, with FGDC metadata in XML and HTML formats.</formcont>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>https://doi.org/10.5066/P1KWBDRY</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+        </digtopt>
+      </digform>
+      <fees>None</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20240916</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Geological Survey, Alaska Science Center</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>Mailing and Physical</addrtype>
+          <address>4210 University Drive</address>
+          <city>Anchorage</city>
+          <state>Alaska</state>
+          <postal>99508</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>907-786-7000</cntvoice>
+        <cntemail>gs-ak_asc_datamanagers@usgs.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Biological Data Profile of the Content Standard for Digital Geospatial Metadata (CSDGM)</metstdn>
+    <metstdv>FGDC-STD-001.1-1999</metstdv>
+  </metainfo>
+</metadata>
