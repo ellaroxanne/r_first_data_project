@@ -1,0 +1,75 @@
+---
+title: "02-Metadata"
+output: html_document
+date: "2025-07-10"
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+raw_data <- read.csv("https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/BLOY_morphology_AlaskaBC.csv")
+```
+Alright! We've loaded our data, and gotten a basic idea of what it looks like. Does that mean we're ready to start our studies? 
+
+Not quite. 
+
+Sure, you could technically jump striaght into crunching numbers, reporting findings, etc. However-- that would not make you a very responsible data scientist. 
+
+Before working with data, you need to know your data. Know the informatin about the data. 
+
+This is so important, it has its own name: <b> metadata </b>. Basically, data about data.  
+
+Relevant links 
+(Will compile)
+
+We already know that this data is on the Black Oystercatcher. 
+## Question: What is the Black Oystercatcher? 
+<!-- Progressive hints; use this link, on this page, etc.-->
+
+The most basic part of this is to understand what your data means. Let's return to the <code>colnames()</code> function we learned about earlier:
+```{r}
+colnames(raw_data)
+```
+Clearly, this data shows information on various features of Black Oystercatcher specimens, collected as a part of this study.
+
+## Question: What do each of the column names mean? 
+
+<!-- Perhaps a table or something, with each column name on the left and then a space to type your answer on the right. Or, easy mode like a click and drag matching. --> 
+<!-- Or start with the easy ones, offer just a helping guide. Latitude, longitude, date, mass, etc.--> 
+
+Before we actually get to working with the data, it's best practice as a data scientist to consider what kind of data you are working with. Numbers don't appear out of a vacuum. 
+
+Here are some relevant links to help you answer the following questions: 
+
+## How was the data compiled?
+ [text box to answer]
+ 
+## Is the data accurate?
+[text box to answer]
+
+Great! Now that we've affirmed the quality of our data, let's get down to what we're really interested in: the data itself.
+
+We've already done the head() function, which gives us a general idea of what kind of variables (columns) are being measured. A <b> variable </b> is a quantity or quality of each data point that is measured. 
+
+Especially with large data files such as this one, it can be difficult to fully wrap your head around the head function. Here, we can use the colnames() function.
+
+<!-- I want the user to be able to type this function in -->
+
+```{r}
+colnames(raw_data)
+```
+
+
+Some of these variables, such as "ParkName" or "ScientificName" are fairly intuitive. 
+Some are not. 
+
+<!-- Exercise: Identify in 1-2 sentences what each variable does-->
+
+Now that we know the data, we'll do some summary statistics in the next module.
+
+
+
+
