@@ -57,22 +57,23 @@ In all of R code chunks above the `echo = FALSE` attribute is used. This is to p
 
 # Introduction
 
-For this project, we will be working with data on invasive plant species, originally provided by []. 
+For this project, we will be working with morphological data collected on the Black Oystercatcher, or <i>Haematopus bachmani. </i>
+
 
 First, we need to get the data onto our computer and into R so that we can use it. 
 
-```{r}
-plants_data <- read.csv("https://raw.githubusercontent.com/ellaroxanne/r_plants_project/refs/heads/main/HTLN_InvasivePlants_Monitoring.csv")
-```
+Right now, the data is stored in a csv file. Csv stands for "comma-separated values." R, and many other computer programs, does a good job at organizing a csv file into a dataframe, which is similar to an Excel spreadsheet or other tabular (table-like) form of organizing data. 
 
-Our data is stored as a .csv file. Csv stands for "comma-separated values." R, and many other computer programs, does a good job at organizing a csv file into a dataframe, which is similar to an Excel spreadsheet or other tabular (table-like) form of organizing data. 
+```{r}
+raw_data <- read.csv("https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/BLOY_morphology_AlaskaBC.csv")
+```
 
 Let's start by getting a basic feel for the data with the head() function, which shows the first 6 rows of the data table.
 
 ```{r}
-head(plants_data)
+head(raw_data)
 ```
-Clearly, this data shows information on various occurrences of invasive plant species across various national parks. 
+Clearly, this data shows information on various features of Black Oystercatcher specimens, collected as a part of this study.
 
 Before we actually get to working with the data, it's best practice as a data scientist to consider what kind of data you are working with. Numbers don't appear out of a vacuum. 
 
