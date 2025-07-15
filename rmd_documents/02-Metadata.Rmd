@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-raw_data <- read.csv("https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/BLOY_morphology_AlaskaBC.csv")
+raw_data <- read.csv("https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/data_and_metadata/BLOY_morphology_AlaskaBC.csv")
 ```
 Alright! We've loaded our data, and gotten a basic idea of what it looks like. Does that mean we're ready to start our studies? 
 
@@ -22,12 +22,56 @@ Before working with data, you need to know your data. Know the informatin about 
 
 This is so important, it has its own name: <b> metadata </b>. Basically, data about data.  
 
-Relevant links 
-(Will compile)
+<!-- On github as BLOY_morphologyPrimaryLengths_AlaskaBC_metadata (1).html 
+There is also an XML version-->
 
-We already know that this data is on the Black Oystercatcher. 
-## Question: What is the Black Oystercatcher? 
+
+## 1. What is a Black Oystercatcher? 
+
+<!-- Textbook to answer. Basically just have them google it. Answer we want: North American bird. Other details to provide: Haematopus bachmani, conservation concern (shows us why our data is important) -->
+
+## 2. What's the study? 
+
+Before we actually get to working with the data, it's best practice as a data scientist to consider what kind of data you are working with. Numbers don't appear out of a vacuum. 
+
+Let's start by reading the description 
+
+<!-- Maybe there's a way to like, link to specifically the abstract. Hint to ctrl/cmd+F. -->
+ <br>
+ 
+<i> "These data provide morphological measurements and primary feather length measurements of Black Oystercatcher </i>(Haematopus bachmani) <i> captured at several sites across Alaska and British Columbia between 2019 and 2022. The first table contains mass and morphological measurements of body and bill size. The second table provides lengths of individual primary feathers measured from folded wing photographs using a computer software. These feather lengths are to be used in a size-constrained components analysis to calculate wing shape such as pointedness and convexity. These data were collected as part of a broader project studying Black Oystercatcher morphology, movement, and diet across Alaska, USA and British Columbia, Canada. Photographs of wings were taken in the field of folded wings on a board with a ruler for scale. The primary length measurements were collected using computer software analysis from wing photos.
+" </i>
+
+<br>
+
+<!-- Textbox to answer. 
+Desired answer: Studying morhpological (physical attribute) data on Black Oystercatchers. Collected to understand species morphology, movement, and diet (lifestyle? need a better word) across North America. Basically, we want to better understand this species and how it lives -->
+
+## 3. How was the data compiled? 
+
+Now that we know what the study is, we want to be able to verify that the data we're using is going to do a good job at answering the questions we and the study want to answer. 
+
+Basically, we're starting to get more granular about where the data comes from. 
+A good set of metadata will help you answer this question. 
+
+Since this dataset comes from a scientific investigation, 
+
+<!-- Process description section of metadata is helpful -->
 <!-- Progressive hints; use this link, on this page, etc.-->
+
+
+## 4. Is the data accurate?
+
+This question comes as a sort of extension to the previous one. 
+We know how the data is compiled; are we sure that those methods will yield data that is accurate? 
+
+How can we answer that?
+
+<!-- How many data points do we have? How are we sure that each parameter was collected well --> 
+[text box to answer]
+
+
+##5. What does the data mean? 
 
 The most basic part of this is to understand what your data means. Let's return to the <code>colnames()</code> function we learned about earlier:
 ```{r}
@@ -38,18 +82,7 @@ Clearly, this data shows information on various features of Black Oystercatcher 
 ## Question: What do each of the column names mean? 
 
 <!-- Perhaps a table or something, with each column name on the left and then a space to type your answer on the right. Or, easy mode like a click and drag matching. --> 
-<!-- Or start with the easy ones, offer just a helping guide. Latitude, longitude, date, mass, etc.--> 
-
-Before we actually get to working with the data, it's best practice as a data scientist to consider what kind of data you are working with. Numbers don't appear out of a vacuum. 
-
-Here are some relevant links to help you answer the following questions: 
-
-## How was the data compiled?
- [text box to answer]
- 
-## Is the data accurate?
-[text box to answer]
-
+<!-- Or start with the easy ones, offer just a helping guide. Latitude, longitude, date, mass, etc.-->
 Great! Now that we've affirmed the quality of our data, let's get down to what we're really interested in: the data itself.
 
 We've already done the head() function, which gives us a general idea of what kind of variables (columns) are being measured. A <b> variable </b> is a quantity or quality of each data point that is measured. 
