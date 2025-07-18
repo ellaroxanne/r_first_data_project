@@ -1,5 +1,5 @@
 ---
-title: "Intro to R"
+title: "Intro to R: Programming Basics"
 runtime: shiny_prerendered
 ---
 
@@ -125,8 +125,6 @@ grade_result(
   fail_if(~identical(typeof(my_float), "double") & !(my_float %% 1 != 0), message="R techinically considers your response a float because there isn't an \"L\" after it, but it is best to try again with a decimal value for the sake of the exercise.")
 )
 ```
-
-Just like integers, floats can be added, but be careful mixing integers and floats while doing arithmatic:
 
 ## Booleans
 
