@@ -1,12 +1,13 @@
 ---
-title: "01-Loading Your Data"
-output: html_document
-date: "2025-07-02"
-runtime: shiny
+title: "Intro to R: Loading Your Data"
+runtime: shiny_prerendered
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+tutorial_options(exercise.eval = FALSE)
+gradethis::gradethis_setup()
 ```
 
 # Introduction

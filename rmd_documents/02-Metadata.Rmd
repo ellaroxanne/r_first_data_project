@@ -1,12 +1,13 @@
 ---
-title: "02-Metadata"
-output: html_document
-date: "2025-07-10"
-runtime: shiny
+title: "Intro to R: Metadata"
+runtime: shiny_prerendered
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+tutorial_options(exercise.eval = FALSE)
+gradethis::gradethis_setup()
 ```
 
 ```{r}
@@ -71,7 +72,7 @@ How can we answer that?
 [text box to answer]
 
 
-##5. What does the data mean? 
+## 5. What does the data mean? 
 
 The most basic part of this is to understand what your data means. Let's return to the <code>colnames()</code> function we learned about earlier:
 ```{r}
