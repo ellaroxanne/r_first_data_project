@@ -1,0 +1,188 @@
+---
+title: "Intro to R"
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+tutorial_options(exercise.eval = FALSE)
+gradethis::gradethis_setup()
+```
+
+```{r prepare-variables}
+mary_age <- 22L
+```
+
+# Variables
+
+What are variables?
+
+A variable is a named container for data.
+
+Say Marys's age is 22, lets make a variable to store that information and be able to access it later.
+
+```{r, eval=TRUE, echo = TRUE}
+mary_age <- 22L
+```
+
+Let's double check that this is working correctly. R has a built in print function that will show us what it looks like. Click "Run Code".
+
+```{r, print_var, exercise=TRUE, exercise.setup = "prepare-variables"}
+print(mary_age)
+```
+
+Now let's say we want to know what her age is in 5 years.
+
+```{r, first_var, exercise=TRUE, exercise.setup = "prepare-variables"}
+print(mary_age + 5L)
+```
+
+What if Mary's age was incorrect? We can update the value to correct this
+
+```{r, update_var, exercise=TRUE}
+mary_age <- 55L
+print(mary_age)
+```
+
+Variables can hold other types of information than just numbers! In the coming sections we will explore several other types of information we can store in variables.
+
+## Integers
+
+Integers store our countable numbers. This is the type of variable we used to store Mary's age. Try creating one yourself above the `print()` function. Name it `my_integer` and set it to whatever you like! Once you're done, click "Submit Answer" to check your work.
+
+```{r, int-example, exercise=TRUE}
+
+print(my_integer)
+```
+
+```{r int-example-check}
+grade_result(
+  pass_if(~is.integer(my_integer)),
+  fail_if(~is.double(my_integer), message = "You are either missing something after your number, or you aren't typing in a whole number. Check the above examples.")
+)
+```
+
+Integers can be added. Here are a few ways to do so.
+
+```{r, int-add, exercise=TRUE}
+  int1 <- 8L
+  my_integer_2 <- 4L
+
+  print(int1 + 4L)
+  print(int1 + my_integer_2)
+  
+```
+
+Experiment with the exercise above and confirm integer addition works as you expect.
+
+## Strings
+
+Strings can store words and sentences, but they'll primary be used for words in R.
+
+As an example, lets store a person's name.
+
+```{r, string-example, exercise=TRUE}
+my_name <- "Miguel"
+print(my_name)
+```
+
+See if you can change the code below to print "My name is Miguel"
+
+```{r, string-sentence, exercise=TRUE}
+my_name <- ""
+print(my_name)
+```
+
+```{r string-sentence-check}
+grade_result(
+  pass_if(~identical(.result, "My name is Miguel"))
+)
+```
+
+## Floats/Numeric
+
+Integers are whole numbers, what if we want to store something that isn't a whole number, like a measurement? In programming, this is a distinct type of data called a float.
+
+The main different between a float and an integer is that a float stores a number with a decimal point, rather than a whole number.
+
+In R, these are also refered to as a "numeric"
+
+Try storing a decimal to `my_float` and watch the output to confirm it worked. Feel free to use the "hint" button if you need more help.
+
+```{r float-example, exercise=TRUE}
+my_float <- 
+print(my_float)
+```
+
+::: {#float-example-hint}
+**Hint:** Try typing numbers like 3.14, 9.8, or 6.022 after the "\<-"
+:::
+
+```{r float-example-check}
+grade_result(
+  pass_if(~identical(typeof(my_float), "double") & (my_float %% 1 != 0)),
+  fail_if(~identical(typeof(my_float), "double") & !(my_float %% 1 != 0), message="R techinically considers your response a float because there isn't an \"L\" after it, but it is best to try again with a decimal value for the sake of the exercise.")
+)
+```
+
+Just like integers, floats can be added, but be careful mixing integers and floats while doing arithmatic:
+
+## Booleans
+
+Booleans can only store one of two values, true or false. This is great for data that can only have two possibilities, or to represent a "yes" or "no".
+
+<!--Kind of a silly example, I plan to change it-->
+
+What if we want to represent whether or not Miguel likes pizza?
+
+```{r bool-example, exercise=TRUE}
+miguel_likes_pizza <- TRUE
+print(miguel_likes_pizza)
+```
+
+How would you represent Miguel not liking pizza?
+
+```{r bool-exercise, exercise=TRUE}
+miguel_likes_pizza <-
+print(miguel_likes_pizza)
+```
+
+```{r bool-exercise-check}
+grade_result(
+  pass_if(~!(miguel_likes_pizza)),
+  fail_if(~typeof(miguel_likes_pizza) != "logical", message="Remember that booleans can only hold \"TRUE\" or \"FALSE\"")
+)
+
+```
+
+## Other Datatypes
+
+There are more complicated datatypes, such as complex numbers or time, but this is too in the weeds for right now, so don't worry about it. Just keep in mind that our list isn't exhaustive.
+
+# Functions
+
+Functions are reusable chunks of code that can be built-in to our environment, or be made by us.
+
+The purpose of a function is to label a repeated task (chunk of code), to make a program neater. It is similar to a variable but stores lines of code rather than a single data value.
+
+We've already used a function to show how variables work, `print()`. As you can probably tell, `print()` takes a variable in its parenthesis and "prints" it to the screen. The name for variables that go in a functions parenthesis are "arguments". Therefore, we can say that \`print() function takes one argument and prints it to the screen.
+
+`times_two()` is a simple multiplication function that takes one parameter, and multiplies it by 2. See if you can get it to multiply 3 by 2.
+
+```{r, function-example, exercise=TRUE, exercise.lines = 5}
+times_two <- function(num) {
+  return(num * 2)
+}
+```
+
+```{r, function-example-solution}
+times_two <- function(num) {
+  return(num * 2)
+}
+times_two(3)
+```
+
+```{r, function-example-code-check}
+grade_code()
+```
