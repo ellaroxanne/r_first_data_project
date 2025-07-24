@@ -45,6 +45,8 @@ mary_age <- 55L
 print(mary_age)
 ```
 
+<!-- Maybe add like a thing of "copy/paste the same code from the earlier block. Look! We didn't change our code, but mary_age + 5 is updated. That's one of the advantages of using variables. You can easily change the value without having to manually go back and mess with blah blah blah code. --> 
+
 Variables can hold other types of information than just numbers! In the coming sections we will explore several other types of information we can store in variables.
 
 ## Integers
@@ -128,6 +130,8 @@ grade_result(
 
 ## Booleans
 
+<!-- Lead with the example. We're building our profile on Miguel. We know his age (float), his XYZ (int), his name (string). Now we want to store a value of whether he likes pizza or not. This can have two values TRUE or FALSE. that's our window into boolean--> 
+
 Booleans can only store one of two values, true or false. This is great for data that can only have two possibilities, or to represent a "yes" or "no".
 
 <!--Kind of a silly example, I plan to change it-->
@@ -156,7 +160,7 @@ grade_result(
 
 ## Other Datatypes
 
-There are more complicated datatypes, such as complex numbers or time, but this is too in the weeds for right now, so don't worry about it. Just keep in mind that our list isn't exhaustive.
+There are more complicated datatypes, such as more complex numbers or time, but this is too in the weeds for right now, so don't worry about it. Just keep in mind that our list isn't exhaustive.
 
 # Functions
 
