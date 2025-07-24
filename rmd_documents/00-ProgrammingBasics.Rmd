@@ -166,6 +166,15 @@ There are more complicated datatypes, such as more complex numbers or time, but 
 
 Functions are reusable chunks of code that can be built-in to our environment, or be made by us.
 
+<!-- If variables are nouns, functions are verbs. Maybe we can do something with the person profile!
+
+1. Function age_in_five_years -> return age + 5
+2. Function is_old -> for conditional 
+3. We don't need to cover loops do we?
+Like we want a function is_old() (NOT A GREAT IDEA JUST WHAT'S COMING TO MIND). If age geq 100, return TRUE. else return false. 
+
+Maybe that's too much to introduce a conditional. --> 
+
 The purpose of a function is to label a repeated task (chunk of code), to make a program neater. It is similar to a variable but stores lines of code rather than a single data value.
 
 We've already used a function to show how variables work, `print()`. As you can probably tell, `print()` takes a variable in its parenthesis and "prints" it to the screen. The name for variables that go in a functions parenthesis are "arguments". Therefore, we can say that \`print() function takes one argument and prints it to the screen.
