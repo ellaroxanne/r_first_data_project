@@ -1,0 +1,102 @@
+---
+title: "Intro to R: R Basics"
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+tutorial_options(exercise.eval = FALSE)
+gradethis::gradethis_setup()
+```
+
+R is a weird language. 
+
+We've built out a profile for Miguel and Sarah (or whatever it is). 
+
+However, everything is stored in separate variables. If only there was a way to store things together! 
+
+## Vectors
+
+Miguel wants to do a study on the how many slices of pizza he eats each time he has pizza. 
+
+R is very data friendly. We can store this data as a <b> vector </b>.
+ 
+```{r}
+miguel_pizza_consumption_data <- c(12, 6, 2, 3, 1, 4, 5)
+```
+
+We use vectors when we want to store lots of entries of the same type (see the previous lesson for data types).
+
+```{r}
+miguel_pizza_enjoyment <- c(FALSE, TRUE, TRUE, TRUE, FALSE, TRUE)
+```
+
+Miguel extends his study by a day. 
+
+```{r}
+new_pizza_consumption_data <- append(miguel_pizza_consumption_data, 2)
+```
+
+Uh oh! Miguel marked his notebook wrong.
+```{r}
+miguel_pizza_enjoyment <- append(miguel_pizza_enjoyment, 2)
+```
+
+what happened to the data type? 
+
+```{r}
+print(miguel_pizza_enjoyment)
+```
+
+Let's fix it
+
+```{r}
+# Change the last entry 
+# Do as.logic()
+```
+
+as. is a helpful family of functions. 
+
+Say we want to see the his results on the third day. 
+
+```{r}
+miguel_pizza_consumption_data[3]
+```
+
+He ate two pieces of pizza!
+
+
+## Other Trivia
+
+rep(), : sequencing
+
+More just worth mentioning. 
+
+
+## Lists
+
+We want more than one type of datatype. 
+
+List. 
+
+```{r}
+miguels_favorite_things <- list("pizza", 2, "dog", TRUE)
+```
+
+Has similar things as vectors for indexing, changing values. 
+
+## Matrices 
+
+Worth mentioning, helpful for linear algebra. I don't think we need to push this too much.
+
+## Data frame
+
+Make a dataframe of the profiles. 
+
+columns are "name" "age" "likes_pizza" 
+Helpful for data, most similar to excel spreadsheets
+
+We will work with dataframes more. 
+
+Each column is like a vector and contains same data type
