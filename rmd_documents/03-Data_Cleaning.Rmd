@@ -1,0 +1,47 @@
+---
+title: "Intro to R: Basic Summary Statistics"
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+tutorial_options(exercise.eval = FALSE)
+gradethis::gradethis_setup()
+```
+
+```{r}
+raw_data <- read.csv("https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/data_and_metadata/BLOY_morphology_AlaskaBC.csv")
+```
+
+Now that we vaguely know what our data's about, let's get a little more used to what it contains. 
+Yay! We finally get to work with numbers!
+
+[add a cute gif of someone celebrating]
+
+Let's make sure our data is clean. First, we'll have the is.na() function. This checks for if there are any values missing. 
+
+```{r}
+is.na(raw_data)
+```
+
+Whoa! That's a lot of information. It's hard, and easy to miss if there's a TRUE in there-- meaning, there's a value that is indeed missing. 
+
+```{r}
+na_dataframe <- is.na(raw_data)
+sum(na_dataframe)
+```
+
+Aha! There's 85 missing values. Great!
+
+...
+
+Where are they? 
+
+We can do this by columns. R has a built-in function called <code> colSums </code> that is made for this purpose. It basically sums by column.
+
+```{r}
+colSums(na_dataframe)
+```
+
+This process is called <b> data cleaning </b>. 
