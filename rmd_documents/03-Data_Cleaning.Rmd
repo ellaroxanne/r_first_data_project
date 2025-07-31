@@ -19,24 +19,41 @@ Yay! We finally get to work with numbers!
 
 [add a cute gif of someone celebrating]
 
+# 1. Summary and Plot
+
+```{r}
+summary(raw_data)
+```
+
+Some are numerical and some are categorical.
+
+
+```{r}
+raw_data$Region <- as.factor(raw_data$Region)
+```
+
+You try it!
+
+```{r}
+raw_data$Site <- as.factor(raw_data$Site)
+raw_data$Season <- as.factor(raw_data$Season)
+raw_data$Age_class <- as.factor(raw_data$Age_class)
+raw_data$Eye_fleck <- as.factor(raw_data$Eye_fleck)
+raw_data$Sex <- as.factor(raw_data$Sex)
+raw_data$Bander <- as.factor(raw_data$Bander)
+```
+
+```{r}
+summary(raw_data)
+```
+# 2. Categorical 
+
+
+
+
+# 3. Numerical -> imputing missing
+
 Let's make sure our data is clean. First, we'll have the is.na() function. This checks for if there are any values missing. 
-
-```{r}
-is.na(raw_data)
-```
-
-Whoa! That's a lot of information. It's hard, and easy to miss if there's a TRUE in there-- meaning, there's a value that is indeed missing. 
-
-```{r}
-na_dataframe <- is.na(raw_data)
-sum(na_dataframe)
-```
-
-Aha! There's 85 missing values. Great!
-
-...
-
-Where are they? 
 
 We can do this by columns. R has a built-in function called <code> colSums </code> that is made for this purpose. It basically sums by column.
 
@@ -44,4 +61,63 @@ We can do this by columns. R has a built-in function called <code> colSums </cod
 colSums(na_dataframe)
 ```
 
-This process is called <b> data cleaning </b>. 
+This process is called <b> data cleaning </b>, and it's just a part of the data science process. 
+
+Now we need to decide what to do with the missing values. 
+
+There's a couple ways we can deal with this. 
+
+The first, and arguably the most common way, is to basically just ignore them. 
+Okay, that's perhaps a little flippant. 
+
+But, we don't consider those data points in our analysis; we remove the rows. 
+
+A helpful way of doing this is through R's built in <code> complete.cases() </code> function. 
+This function finds all the rows that have no missing values. 
+
+Let's try it now: 
+
+<!-- interactive code box where user can type it themself-->
+
+```{r}
+complete.cases(raw_data)
+```
+
+Any row marked <code> FALSE </code> is not a complete case-- meaning it has at least one missing value. 
+
+The <code> complete.case() </code> function just tells you which rows do and do not have complete cases. 
+In order to use it to remove the rows, we have to filter it. 
+
+The way we do this is by using the Boolean mask to index. 
+
+```{r}
+removed_rows_data <- raw_data[complete.cases(raw_data), ]
+print(removed_rows_data)
+```
+
+<!-- Go over indexing in 00 lesson-->
+
+Great! Why would we need any other option? 
+Well, let's compare the number of rows. 
+
+```{r}
+print(nrow(raw_data))
+print(nrow(removed_rows_data))
+```
+
+We've deleted 40 data points! That has significantly impacted our sample size. 
+
+For example, say we are trying to study the Wing variable. 
+
+```{r}
+colSums(na_dataframe)
+```
+Only three specimens are missing Wing values. 10, however, are missing tail measurements. 
+
+If we're only trying to study the Wing value, we've just throw out up to 7 perfectly good datapoints of Wing measurements, by removing all the rows!
+
+This could also introduce bias, if the missing values were not randomly missing. 
+
+<!-- Can o' worms ^ -->
+
+
