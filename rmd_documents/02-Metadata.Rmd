@@ -19,7 +19,7 @@ Not quite.
 
 Sure, you could technically jump striaght into crunching numbers, reporting findings, etc. However-- that would not make you a very responsible data scientist. 
 
-Before working with data, you need to know your data. Know the informatin about the data. 
+Before working with data, you need to <i> know </i> your data. Know the information about the data. 
 
 This is so important, it has its own name: <b> metadata </b>. Basically, data about data.  
 
@@ -96,14 +96,10 @@ Especially with large data files such as this one, it can be difficult to fully 
 colnames(raw_data)
 ```
 
-
 Some of these variables, such as "ParkName" or "ScientificName" are fairly intuitive. 
 Some are not. 
 
 <!-- Exercise: Identify in 1-2 sentences what each variable does-->
+<!-- We can have as an example. Region: The part of the study group from which the specimen originates. -->
 
 Now that we know the data, we'll do some summary statistics in the next module.
-
-
-
-
