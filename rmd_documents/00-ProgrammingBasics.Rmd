@@ -20,6 +20,8 @@ What are variables?
 
 A variable is a named container for data.
 
+<!-- Uhh home canners write the name of the stuff and the date that's being canned. Think of it like that. You're telling the computer "name something and keep the information about it" so you don't have to --> 
+
 Say Marys's age is 22, lets make a variable to store that information and be able to access it later.
 
 ```{r, eval=TRUE, echo = TRUE}

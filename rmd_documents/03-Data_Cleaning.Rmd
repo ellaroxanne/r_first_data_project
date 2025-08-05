@@ -21,16 +21,54 @@ Yay! We finally get to work with numbers!
 
 # 1. Summary and Plot
 
+R has a very helpful built in function, the <code> summary() </code> function, which provides a nice, quick glance at your data. 
+To call it, call the <code> summary </code> function with your dataset as an argument.
+Remember, our dataset as it is right now is labelled <code> raw_data </code>. 
+
 ```{r}
 summary(raw_data)
 ```
 
-Some are numerical and some are categorical.
+What does the summary function do? What do you notice? 
 
+<!-- Textbox -->
+
+One important thing to notice is that the summary function treats <b> numerical </b> variables and <b> categorical </b> variables differently. 
+
+What information does it display about the numerical variables? 
+
+<!-- Defs of numerical and categorical can be placed in lesson 0 -->
+
+<!-- Textbox -->
+
+What information does it display about the categorical variables? 
+
+<!-- Textbox -->
+
+You may notice, the information it displays for categorical variables is somewhat limited. 
+Since categorical variables are usually different ``buckets'' (check), think of a way we've learned to describe them.
+
+That's right! Factors. 
+
+Let's start by making the <code> Region </code> variable a factor. 
+
+<!-- Progressive hints: as.factor() function
+Arguments is the column
+Index a column with $ -->
 
 ```{r}
 raw_data$Region <- as.factor(raw_data$Region)
 ```
+
+Now, let's take a look at how this changed the summary function:
+
+```{r}
+summary(raw_data)
+```
+
+How did the factor change the way the <code> summary </code> function worked with the categorical variables? 
+
+<!-- Textbox -->
 
 You try it!
 
@@ -58,7 +96,7 @@ Let's make sure our data is clean. First, we'll have the is.na() function. This 
 We can do this by columns. R has a built-in function called <code> colSums </code> that is made for this purpose. It basically sums by column.
 
 ```{r}
-colSums(na_dataframe)
+# colSums(raw_data)
 ```
 
 This process is called <b> data cleaning </b>, and it's just a part of the data science process. 
@@ -80,7 +118,7 @@ Let's try it now:
 <!-- interactive code box where user can type it themself-->
 
 ```{r}
-complete.cases(raw_data)
+# complete.cases(raw_data)
 ```
 
 Any row marked <code> FALSE </code> is not a complete case-- meaning it has at least one missing value. 
@@ -91,8 +129,8 @@ In order to use it to remove the rows, we have to filter it.
 The way we do this is by using the Boolean mask to index. 
 
 ```{r}
-removed_rows_data <- raw_data[complete.cases(raw_data), ]
-print(removed_rows_data)
+# removed_rows_data <- raw_data[complete.cases(raw_data), ]
+# print(removed_rows_data)
 ```
 
 <!-- Go over indexing in 00 lesson-->
@@ -101,8 +139,8 @@ Great! Why would we need any other option?
 Well, let's compare the number of rows. 
 
 ```{r}
-print(nrow(raw_data))
-print(nrow(removed_rows_data))
+#print(nrow(raw_data))
+#print(nrow(removed_rows_data))
 ```
 
 We've deleted 40 data points! That has significantly impacted our sample size. 
@@ -110,7 +148,7 @@ We've deleted 40 data points! That has significantly impacted our sample size.
 For example, say we are trying to study the Wing variable. 
 
 ```{r}
-colSums(na_dataframe)
+#colSums(raw_data)
 ```
 Only three specimens are missing Wing values. 10, however, are missing tail measurements. 
 
