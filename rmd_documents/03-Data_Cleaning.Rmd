@@ -19,7 +19,7 @@ Yay! We finally get to work with numbers!
 
 [add a cute gif of someone celebrating]
 
-# 1. Summary and Plot
+# 1. Getting Your Data Ready with Factors
 
 R has a very helpful built in function, the <code> summary() </code> function, which provides a nice, quick glance at your data. 
 To call it, call the <code> summary </code> function with your dataset as an argument.
@@ -70,8 +70,9 @@ How did the factor change the way the <code> summary </code> function worked wit
 
 <!-- Textbox -->
 
-You try it!
+Let's do this for the rest of the categorical variables!
 
+<!-- Maybe have a thing. Think about each variable: should it be a factor or not? Most of the character ones should, but alpha notably shouldn't. Somehow point the student in that direction and understand why.--> 
 ```{r}
 raw_data$Site <- as.factor(raw_data$Site)
 raw_data$Season <- as.factor(raw_data$Season)
@@ -81,10 +82,38 @@ raw_data$Sex <- as.factor(raw_data$Sex)
 raw_data$Bander <- as.factor(raw_data$Bander)
 ```
 
+Now that everything's a factor, let's try our summary function again:
 ```{r}
 summary(raw_data)
 ```
-# 2. Categorical 
+
+# 1.5. Handling "Date" 
+
+```{r}
+raw_data$Date <- as.Date(raw_data$Date)
+```
+
+```{r}
+summary(raw_data)
+```
+
+# 2. Basic Data Cleaning
+
+Try <code> duplicated() </code> function. 
+
+```{r}
+duplicated(raw_data)
+```
+
+Returns a bunch of falses. 
+Easy for a truth to get lost in there!
+
+<!-- Mention which function in lesson 0, or we can split that up -->
+
+```{r}
+which(duplicated(raw_data))
+```
+# 2. Cleaning the Categorical Data
 
 
 
