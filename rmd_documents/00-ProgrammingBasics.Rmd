@@ -94,7 +94,9 @@ Integers are whole numbers, what if we want to store something that isn't a whol
 
 The main different between a float and an integer is that a float stores a number with a decimal point, rather than a whole number.
 
-In R, these are also refered to as a "numeric"
+<!-- R defaults to floats when you assign a number. Try to think of some variables that would work well as float! height, weight, temperature, angles, volume --> 
+
+In R, these are also referred to as a "numeric"
 
 Try storing a decimal to `my_float` and watch the output to confirm it worked. Feel free to use the "hint" button if you need more help.
 
@@ -113,6 +115,11 @@ grade_result(
   fail_if(~identical(typeof(my_float), "double") & !(my_float %% 1 != 0), message="R techinically considers your response a float because there isn't an \"L\" after it, but it is best to try again with a decimal value for the sake of the exercise.")
 )
 ```
+
+<!-- Maybe add an exercise just saying. R has built in operations that you know from math class. 
++, -, *, / 
+
+Introduce modulo? is that a can of worms. Operators can also be a separate lesson, what are your thoughts --> 
 
 
 ## Integers
