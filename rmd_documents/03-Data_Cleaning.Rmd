@@ -19,7 +19,7 @@ Yay! We finally get to work with numbers!
 
 [add a cute gif of someone celebrating]
 
-# 1. Preparing Your Data
+# Preparing Your Data - Factors
 
 R has a very helpful built in function, the <code> summary() </code> function, which provides a nice, quick glance at your data. 
 To call it, call the <code> summary </code> function with your dataset as an argument.
@@ -97,28 +97,58 @@ raw_data$Date <- as.Date(raw_data$Date)
 summary(raw_data)
 ```
 
-# 2. Basic Data Cleaning
+# Handling Structural Issues
 
-Try <code> duplicated() </code> function. 
+`<!-- Perhaps have some inconsistencies in like, case or something. 
+For example, some sexes are labelled F and some are female. How can we use R to put those all in the same factor?-->
+
+<!-- This would involve artificial dirtying of the data -->
+
+# Removing Duplicates
+
+Now, we're ready to really clean our data. 
+We've already done the sort of ``step 0'' of this in the previous section, where we familiarized ourselves with the metadata and ensured the data was accurate and collected properly. 
+
+Now, we're going to make sure everything is in order on the numerical side. 
+
+The first step we can do is check for duplicates! 
+
+That is, we can make sure none of the observations were accidentally added twice. 
+
+Because this is such a common problem in data analysis, R has a built in function called <code> duplicated() </code> which takes your dataset as an argument, and checks if any rows are duplicated. 
+
+Try the function now:
 
 ```{r}
 duplicated(raw_data)
 ```
 
-Returns a bunch of falses. 
-Easy for a truth to get lost in there!
+What did the function return? A vector? What type?
+
+<!-- Textbox -->
+
+What has the function done? 
+<!-- Textbox 
+ANSWER: Iterated through the rows and checked if there are any duplicates of the previous rows.-->
+
+<!-- Observation: This is what makes ALPHA and other primary keys important, because it ensures that if by some crazy coincidence, two entries had the exact same measurements, they wouldn't accidentally be counted as duplicates--> 
+
+We've got a huge list that looks like it's all <code> FALSE </code> but let's make sure that there's no <code> TRUE </code> in there. 
+
+The best practice to do this is the <code> which() </code> function. 
+The <code> which() </code> function will tell you if there are any <code> TRUE </code> values in your vector, and what their indices are. 
 
 <!-- Mention which function in lesson 0, or we can split that up -->
 
 ```{r}
 which(duplicated(raw_data))
 ```
-# 2. Cleaning the Categorical Data
 
+Since it returend <code> integer(0) </code>, that means that we have no duplicates! 
 
+<!-- I have half a mind to falsely dirty the data and add a duplicate so we can practice removing them -->
 
-
-# 3. Numerical -> imputing missing
+# Handling Missing Values
 
 Let's make sure our data is clean. First, we'll have the is.na() function. This checks for if there are any values missing. 
 

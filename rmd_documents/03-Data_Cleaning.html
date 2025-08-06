@@ -151,8 +151,8 @@ pre code {
 more used to what it contains. Yay! We finally get to work with
 numbers!</p>
 <p>[add a cute gif of someone celebrating]</p>
-<div id="section-preparing-your-data" class="section level1">
-<h1>1. Preparing Your Data</h1>
+<div id="section-preparing-your-data---factors" class="section level1">
+<h1>Preparing Your Data - Factors</h1>
 <p>R has a very helpful built in function, the <code> summary() </code>
 function, which provides a nice, quick glance at your data. To call it,
 call the <code> summary </code> function with your dataset as an
@@ -381,9 +381,27 @@ again:</p>
 ##  Max.   :14.210   Max.   :6.900  
 ##  NA&#39;s   :6        NA&#39;s   :8</code></pre>
 </div>
-<div id="section-basic-data-cleaning" class="section level1">
-<h1>2. Basic Data Cleaning</h1>
-<p>Try <code> duplicated() </code> function.</p>
+<div id="section-handling-structural-issues" class="section level1">
+<h1>Handling Structural Issues</h1>
+<p>`<!-- Perhaps have some inconsistencies in like, case or something. 
+For example, some sexes are labelled F and some are female. How can we use R to put those all in the same factor?--></p>
+<!-- This would involve artificial dirtying of the data -->
+</div>
+<div id="section-removing-duplicates" class="section level1">
+<h1>Removing Duplicates</h1>
+<p>Now, we’re ready to really clean our data. We’ve already done the
+sort of ``step 0’’ of this in the previous section, where we
+familiarized ourselves with the metadata and ensured the data was
+accurate and collected properly.</p>
+<p>Now, we’re going to make sure everything is in order on the numerical
+side.</p>
+<p>The first step we can do is check for duplicates!</p>
+<p>That is, we can make sure none of the observations were accidentally
+added twice.</p>
+<p>Because this is such a common problem in data analysis, R has a built
+in function called <code> duplicated() </code> which takes your dataset
+as an argument, and checks if any rows are duplicated.</p>
+<p>Try the function now:</p>
 <pre><code>##   [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
 ##  [13] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
 ##  [25] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
@@ -407,15 +425,25 @@ again:</p>
 ## [241] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
 ## [253] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
 ## [265] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE</code></pre>
-<p>Returns a bunch of falses. Easy for a truth to get lost in there!</p>
+<p>What did the function return? A vector? What type?</p>
+<!-- Textbox -->
+<p>What has the function done? <!-- Textbox 
+ANSWER: Iterated through the rows and checked if there are any duplicates of the previous rows.--></p>
+<!-- Observation: This is what makes ALPHA and other primary keys important, because it ensures that if by some crazy coincidence, two entries had the exact same measurements, they wouldn't accidentally be counted as duplicates-->
+<p>We’ve got a huge list that looks like it’s all <code> FALSE </code>
+but let’s make sure that there’s no <code> TRUE </code> in there.</p>
+<p>The best practice to do this is the <code> which() </code> function.
+The <code> which() </code> function will tell you if there are any
+<code> TRUE </code> values in your vector, and what their indices
+are.</p>
 <!-- Mention which function in lesson 0, or we can split that up -->
 <pre><code>## integer(0)</code></pre>
+<p>Since it returend <code> integer(0) </code>, that means that we have
+no duplicates!</p>
+<!-- I have half a mind to falsely dirty the data and add a duplicate so we can practice removing them -->
 </div>
-<div id="section-cleaning-the-categorical-data" class="section level1">
-<h1>2. Cleaning the Categorical Data</h1>
-</div>
-<div id="section-numerical---imputing-missing" class="section level1">
-<h1>3. Numerical -&gt; imputing missing</h1>
+<div id="section-handling-missing-values" class="section level1">
+<h1>Handling Missing Values</h1>
 <p>Let’s make sure our data is clean. First, we’ll have the is.na()
 function. This checks for if there are any values missing.</p>
 <p>We can do this by columns. R has a built-in function called <code>
