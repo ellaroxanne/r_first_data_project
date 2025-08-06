@@ -152,45 +152,99 @@ pre code {
 <p>What are variables?</p>
 <p>A variable is a named container for data.</p>
 <!-- Uhh home canners write the name of the stuff and the date that's being canned. Think of it like that. You're telling the computer "name something and keep the information about it" so you don't have to -->
-<p>Say Marys’s age is 22, lets make a variable to store that information
-and be able to access it later.</p>
-<pre class="r"><code>mary_age &lt;- 22L</code></pre>
-<p>Let’s double check that this is working correctly. R has a built in
-print function that will show us what it looks like. Click “Run
-Code”.</p>
+<p>Meet Mary.</p>
+<!-- doodle or something cute -->
+<p>We want to store some information about her, that we want to be able
+to easily access.</p>
+<!-- Doodle of Mary saying she's 72 inches tall -->
+<p>Say Marys’s age is 60, lets make a variable to store that information
+and be able to access it later. In R, we use the symbol <code> &lt;-
+</code> to create variables. The fancy computing term for this, <code>
+&lt;- </code> is <b> assignment operator </b>.</p>
+<pre class="r"><code>mary_height &lt;- 72</code></pre>
+<p>Let’s double check that we saved her age correctly. R has a built in
+<code> print </code> function that will, as the name suggests, print a
+value. Click “Run Code” to see it in action.</p>
 <div class="tutorial-exercise" data-label="print_var"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0" data-pipe="|&gt;">
-<pre class="text"><code>print(mary_age)</code></pre>
+<pre class="text"><code>print(mary_height)</code></pre>
 <script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":false,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
 </div>
-<p>Now let’s say we want to know what her age is in 5 years.</p>
+<p>Great! Since it printed 72, we know that <code> mary_age </code> is
+saved correctly.</p>
+<p>How tall would she be if she was 5 inches? You can probably do this
+in your head, but let’s see if the computer can do it.</p>
 <div class="tutorial-exercise" data-label="first_var"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0" data-pipe="|&gt;">
-<pre class="text"><code>print(mary_age + 5L)</code></pre>
+<pre class="text"><code>print(mary_height + 5)</code></pre>
 <script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":false,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
 </div>
-<p>What if Mary’s age was incorrect? We can update the value to correct
-this</p>
+<p>Notice that it automatically computed the number [CHANGE THE WORDING]
+based on the value of our variable <code> mary_height </code>. This is
+the advantage of using variables: it allows our code to be dynamic.</p>
+<p>Why is this dynamicness (dynamicity? idk) important?</p>
+<p>Well, Mary has a confession to make.</p>
+<!-- Mary doodle, she lied about her height! She's actually 60 inches tall. -->
+<p>Oh boy, how do we handle this?</p>
+<p>We can simply change the variable value. This is called <b> what’s
+the vocab. reassigning? </b>.</p>
 <div class="tutorial-exercise" data-label="update_var"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0" data-pipe="|&gt;">
-<pre class="text"><code>mary_age &lt;- 55L
+<pre class="text"><code>mary_age &lt;- 60
 print(mary_age)</code></pre>
 <script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":false,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
 </div>
-<!-- Maybe add like a thing of "copy/paste the same code from the earlier block. Look! We didn't change our code, but mary_age + 5 is updated. That's one of the advantages of using variables. You can easily change the value without having to manually go back and mess with blah blah blah code. -->
+<p>Copy and paste the same code from the earlier block, where we
+computed Mary’s height adjusted by five inches</p>
+<!-- Maybe add like a thing of "copy/paste the same code from the earlier block. Look! We didn't change our code, but mary_age + 5 is updated. That's one of the advantages of using variables. You can easily change the value without having to manually go back and mess with blah blah blah code. 
+I can't figure out how to add the code block. -->
+<p>This is a small example but it’s illustrative of something important:
+by using variables, you can quickly adjust your code without having to
+go through and manually rename everything.</p>
+<!-- Ella make this more eloquent -->
 <p>Variables can hold other types of information than just numbers! In
 the coming sections we will explore several other types of information
 we can store in variables.</p>
+<!-- Maybe add an exercise here, assign your own variable for Mary's friend Miguel. How tall is he? Print it to make sure it's correct. Just make sure they create a float/whatever it's called and print it.-->
+<div id="section-floats-and-numerics" class="section level2">
+<h2>Floats and Numerics</h2>
+<!-- Beginnings of data types. What is a float? 
+
+I just moved this here, you can edit content how you like to make it make sense-->
+<!-- introduction to numeric operations etc. -->
+<p>Integers are whole numbers, what if we want to store something that
+isn’t a whole number, like a measurement? In programming, this is a
+distinct type of data called a float.</p>
+<p>The main different between a float and an integer is that a float
+stores a number with a decimal point, rather than a whole number.</p>
+<p>In R, these are also refered to as a “numeric”</p>
+<p>Try storing a decimal to <code>my_float</code> and watch the output
+to confirm it worked. Feel free to use the “hint” button if you need
+more help.</p>
+<div class="tutorial-exercise" data-label="float-example"
+data-completion="1" data-diagnostics="1" data-startover="1"
+data-lines="0" data-pipe="|&gt;">
+<pre class="text"><code>my_float &lt;- 
+print(my_float)</code></pre>
+<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":true,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
+</div>
+<div id="section-float-example-hint">
+<p><strong>Hint:</strong> Try typing numbers like 3.14, 9.8, or 6.022
+after the “&lt;-”</p>
+</div>
+</div>
 <div id="section-integers" class="section level2">
 <h2>Integers</h2>
-<p>Integers store our countable numbers. This is the type of variable we
-used to store Mary’s age. Try creating one yourself above the
-<code>print()</code> function. Name it <code>my_integer</code> and set
-it to whatever you like! Once you’re done, click “Submit Answer” to
-check your work.</p>
+<p>Integers store our countable numbers.</p>
+<!-- I think this bit should introduce age. -->
+<!-- Justification: It's unusual to have ages as a float. We don't say I'm 32.64829 years old; you say I'm 32. -->
+<p>This is the type of variable we used to store Mary’s age. Try
+creating one yourself above the <code>print()</code> function. Name it
+<code>my_integer</code> and set it to whatever you like! Once you’re
+done, click “Submit Answer” to check your work.</p>
 <div class="tutorial-exercise" data-label="int-example"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0" data-pipe="|&gt;">
@@ -230,29 +284,6 @@ data-lines="0" data-pipe="|&gt;">
 <pre class="text"><code>my_name &lt;- &quot;&quot;
 print(my_name)</code></pre>
 <script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":true,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
-</div>
-</div>
-<div id="section-floatsnumeric" class="section level2">
-<h2>Floats/Numeric</h2>
-<p>Integers are whole numbers, what if we want to store something that
-isn’t a whole number, like a measurement? In programming, this is a
-distinct type of data called a float.</p>
-<p>The main different between a float and an integer is that a float
-stores a number with a decimal point, rather than a whole number.</p>
-<p>In R, these are also refered to as a “numeric”</p>
-<p>Try storing a decimal to <code>my_float</code> and watch the output
-to confirm it worked. Feel free to use the “hint” button if you need
-more help.</p>
-<div class="tutorial-exercise" data-label="float-example"
-data-completion="1" data-diagnostics="1" data-startover="1"
-data-lines="0" data-pipe="|&gt;">
-<pre class="text"><code>my_float &lt;- 
-print(my_float)</code></pre>
-<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":true,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
-</div>
-<div id="section-float-example-hint">
-<p><strong>Hint:</strong> Try typing numbers like 3.14, 9.8, or 6.022
-after the “&lt;-”</p>
 </div>
 </div>
 <div id="section-booleans" class="section level2">
@@ -370,7 +401,7 @@ learnr:::store_exercise_cache(structure(list(label = "print_var", global_setup =
     include = FALSE)), setup = "mary_age <- 22L", chunks = list(
     list(label = "prepare-variables", code = "mary_age <- 22L", 
         opts = list(label = "\"prepare-variables\""), engine = "r"), 
-    list(label = "print_var", code = "print(mary_age)", opts = list(
+    list(label = "print_var", code = "print(mary_height)", opts = list(
         label = "\"print_var\"", exercise = "TRUE", exercise.setup = "\"prepare-variables\""), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
@@ -392,7 +423,7 @@ learnr:::store_exercise_cache(structure(list(label = "print_var", global_setup =
         exercise.eval = FALSE, exercise.timelimit = 60, exercise.checker = "function (label = NULL, solution_code = NULL, user_code = NULL, \n    check_code = NULL, envir_result = NULL, evaluate_result = NULL, \n    envir_prep = NULL, last_value = NULL, stage = NULL, ..., \n    solution_eval_fn = NULL) \n{\n    (utils::getFromNamespace(\"check_exercise\", \"gradethis\"))(label = label, \n        solution_code = solution_code, user_code = user_code, \n        check_code = check_code, envir_result = envir_result, \n        evaluate_result = evaluate_result, envir_prep = envir_prep, \n        last_value = last_value, stage = stage, ...)\n}", 
         exercise.error.check.code = "gradethis_error_checker()", 
         label = "print_var", exercise = TRUE, exercise.setup = "prepare-variables", 
-        code = "print(mary_age)", out.width.px = 672, out.height.px = 480, 
+        code = "print(mary_height)", out.width.px = 672, out.height.px = 480, 
         params.src = "print_var, exercise=TRUE, exercise.setup = \"prepare-variables\"", 
         fig.num = 0, exercise.df_print = "default"), engine = "r", 
     version = "4"), class = c("r", "tutorial_exercise")))
@@ -413,11 +444,12 @@ learnr:::store_exercise_cache(structure(list(label = "first_var", global_setup =
     include = FALSE)), setup = "mary_age <- 22L", chunks = list(
     list(label = "prepare-variables", code = "mary_age <- 22L", 
         opts = list(label = "\"prepare-variables\""), engine = "r"), 
-    list(label = "first_var", code = "print(mary_age + 5L)", 
+    list(label = "first_var", code = "print(mary_height + 5)", 
         opts = list(label = "\"first_var\"", exercise = "TRUE", 
-            exercise.setup = "\"prepare-variables\""), engine = "r")), 
-    code_check = NULL, error_check = NULL, check = NULL, solution = NULL, 
-    tests = NULL, options = list(eval = FALSE, echo = TRUE, results = "markup", 
+            exercise.setup = "\"prepare-variables\"", eval = "TRUE", 
+            echo = "TRUE"), engine = "r")), code_check = NULL, 
+    error_check = NULL, check = NULL, solution = NULL, tests = NULL, 
+    options = list(eval = FALSE, echo = TRUE, results = "markup", 
         tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
         comment = NA, highlight = FALSE, size = "normalsize", 
         background = "#F7F7F7", strip.white = TRUE, cache = 0, 
@@ -436,8 +468,8 @@ learnr:::store_exercise_cache(structure(list(label = "first_var", global_setup =
         exercise.eval = FALSE, exercise.timelimit = 60, exercise.checker = "function (label = NULL, solution_code = NULL, user_code = NULL, \n    check_code = NULL, envir_result = NULL, evaluate_result = NULL, \n    envir_prep = NULL, last_value = NULL, stage = NULL, ..., \n    solution_eval_fn = NULL) \n{\n    (utils::getFromNamespace(\"check_exercise\", \"gradethis\"))(label = label, \n        solution_code = solution_code, user_code = user_code, \n        check_code = check_code, envir_result = envir_result, \n        evaluate_result = evaluate_result, envir_prep = envir_prep, \n        last_value = last_value, stage = stage, ...)\n}", 
         exercise.error.check.code = "gradethis_error_checker()", 
         label = "first_var", exercise = TRUE, exercise.setup = "prepare-variables", 
-        code = "print(mary_age + 5L)", out.width.px = 672, out.height.px = 480, 
-        params.src = "first_var, exercise=TRUE, exercise.setup = \"prepare-variables\"", 
+        code = "print(mary_height + 5)", out.width.px = 672, 
+        out.height.px = 480, params.src = "first_var, exercise=TRUE, exercise.setup = \"prepare-variables\", eval=TRUE, echo= TRUE", 
         fig.num = 0, exercise.df_print = "default"), engine = "r", 
     version = "4"), class = c("r", "tutorial_exercise")))
 </script>
@@ -455,7 +487,7 @@ learnr:::store_exercise_cache(structure(list(label = "update_var", global_setup 
 "knitr::opts_chunk$set(echo = FALSE)", "tutorial_options(exercise.eval = FALSE)", 
 "gradethis::gradethis_setup()"), chunk_opts = list(label = "setup", 
     include = FALSE)), setup = NULL, chunks = list(list(label = "update_var", 
-    code = "mary_age <- 55L\nprint(mary_age)", opts = list(label = "\"update_var\"", 
+    code = "mary_age <- 60\nprint(mary_age)", opts = list(label = "\"update_var\"", 
         exercise = "TRUE"), engine = "r")), code_check = NULL, 
     error_check = NULL, check = NULL, solution = NULL, tests = NULL, 
     options = list(eval = FALSE, echo = TRUE, results = "markup", 
@@ -476,9 +508,53 @@ learnr:::store_exercise_cache(structure(list(label = "update_var", global_setup 
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
         exercise.eval = FALSE, exercise.timelimit = 60, exercise.checker = "function (label = NULL, solution_code = NULL, user_code = NULL, \n    check_code = NULL, envir_result = NULL, evaluate_result = NULL, \n    envir_prep = NULL, last_value = NULL, stage = NULL, ..., \n    solution_eval_fn = NULL) \n{\n    (utils::getFromNamespace(\"check_exercise\", \"gradethis\"))(label = label, \n        solution_code = solution_code, user_code = user_code, \n        check_code = check_code, envir_result = envir_result, \n        evaluate_result = evaluate_result, envir_prep = envir_prep, \n        last_value = last_value, stage = stage, ...)\n}", 
         exercise.error.check.code = "gradethis_error_checker()", 
-        label = "update_var", exercise = TRUE, code = c("mary_age <- 55L", 
+        label = "update_var", exercise = TRUE, code = c("mary_age <- 60", 
         "print(mary_age)"), out.width.px = 672, out.height.px = 480, 
         params.src = "update_var, exercise=TRUE", fig.num = 0, 
+        exercise.df_print = "default"), engine = "r", version = "4"), class = c("r", 
+"tutorial_exercise")))
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+`tutorial-exercise-float-example-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-float-example-code-editor`)), session)
+output$`tutorial-exercise-float-example-output` <- renderUI({
+  `tutorial-exercise-float-example-result`()
+})
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::store_exercise_cache(structure(list(label = "float-example", global_setup = structure(c("library(learnr)", 
+"knitr::opts_chunk$set(echo = FALSE)", "tutorial_options(exercise.eval = FALSE)", 
+"gradethis::gradethis_setup()"), chunk_opts = list(label = "setup", 
+    include = FALSE)), setup = NULL, chunks = list(list(label = "float-example", 
+    code = "my_float <- \nprint(my_float)", opts = list(label = "\"float-example\"", 
+        exercise = "TRUE"), engine = "r")), code_check = NULL, 
+    error_check = NULL, check = structure(c("grade_result(", 
+    "  pass_if(~identical(typeof(my_float), \"double\") & (my_float %% 1 != 0)),", 
+    "  fail_if(~identical(typeof(my_float), \"double\") & !(my_float %% 1 != 0), message=\"R techinically considers your response a float because there isn't an \\\"L\\\" after it, but it is best to try again with a decimal value for the sake of the exercise.\")", 
+    ")"), chunk_opts = list(label = "float-example-check")), 
+    solution = NULL, tests = NULL, options = list(eval = FALSE, 
+        echo = TRUE, results = "markup", tidy = FALSE, tidy.opts = NULL, 
+        collapse = FALSE, prompt = FALSE, comment = NA, highlight = FALSE, 
+        size = "normalsize", background = "#F7F7F7", strip.white = TRUE, 
+        cache = 0, cache.path = "00-ProgrammingBasics_cache/html/", 
+        cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
+        autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
+        fig.show = "asis", fig.align = "default", fig.path = "00-ProgrammingBasics_files/figure-html/", 
+        dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
+        fig.width = 7, fig.height = 5, fig.env = "figure", fig.cap = NULL, 
+        fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
+        fig.pos = "", out.width = 672, out.height = NULL, out.extra = NULL, 
+        fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
+        aniopts = "controls,loop", warning = TRUE, error = FALSE, 
+        message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
+        engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
+        exercise.eval = FALSE, exercise.timelimit = 60, exercise.checker = "function (label = NULL, solution_code = NULL, user_code = NULL, \n    check_code = NULL, envir_result = NULL, evaluate_result = NULL, \n    envir_prep = NULL, last_value = NULL, stage = NULL, ..., \n    solution_eval_fn = NULL) \n{\n    (utils::getFromNamespace(\"check_exercise\", \"gradethis\"))(label = label, \n        solution_code = solution_code, user_code = user_code, \n        check_code = check_code, envir_result = envir_result, \n        evaluate_result = evaluate_result, envir_prep = envir_prep, \n        last_value = last_value, stage = stage, ...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "float-example", exercise = TRUE, code = c("my_float <- ", 
+        "print(my_float)"), out.width.px = 672, out.height.px = 480, 
+        params.src = "float-example, exercise=TRUE", fig.num = 0, 
         exercise.df_print = "default"), engine = "r", version = "4"), class = c("r", 
 "tutorial_exercise")))
 </script>
@@ -647,50 +723,6 @@ learnr:::store_exercise_cache(structure(list(label = "string-sentence", global_s
         label = "string-sentence", exercise = TRUE, code = c("my_name <- \"\"", 
         "print(my_name)"), out.width.px = 672, out.height.px = 480, 
         params.src = "string-sentence, exercise=TRUE", fig.num = 0, 
-        exercise.df_print = "default"), engine = "r", version = "4"), class = c("r", 
-"tutorial_exercise")))
-</script>
- 
-<script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-float-example-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-float-example-code-editor`)), session)
-output$`tutorial-exercise-float-example-output` <- renderUI({
-  `tutorial-exercise-float-example-result`()
-})
-</script>
-
-
-<script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "float-example", global_setup = structure(c("library(learnr)", 
-"knitr::opts_chunk$set(echo = FALSE)", "tutorial_options(exercise.eval = FALSE)", 
-"gradethis::gradethis_setup()"), chunk_opts = list(label = "setup", 
-    include = FALSE)), setup = NULL, chunks = list(list(label = "float-example", 
-    code = "my_float <- \nprint(my_float)", opts = list(label = "\"float-example\"", 
-        exercise = "TRUE"), engine = "r")), code_check = NULL, 
-    error_check = NULL, check = structure(c("grade_result(", 
-    "  pass_if(~identical(typeof(my_float), \"double\") & (my_float %% 1 != 0)),", 
-    "  fail_if(~identical(typeof(my_float), \"double\") & !(my_float %% 1 != 0), message=\"R techinically considers your response a float because there isn't an \\\"L\\\" after it, but it is best to try again with a decimal value for the sake of the exercise.\")", 
-    ")"), chunk_opts = list(label = "float-example-check")), 
-    solution = NULL, tests = NULL, options = list(eval = FALSE, 
-        echo = TRUE, results = "markup", tidy = FALSE, tidy.opts = NULL, 
-        collapse = FALSE, prompt = FALSE, comment = NA, highlight = FALSE, 
-        size = "normalsize", background = "#F7F7F7", strip.white = TRUE, 
-        cache = 0, cache.path = "00-ProgrammingBasics_cache/html/", 
-        cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
-        autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
-        fig.show = "asis", fig.align = "default", fig.path = "00-ProgrammingBasics_files/figure-html/", 
-        dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
-        fig.width = 7, fig.height = 5, fig.env = "figure", fig.cap = NULL, 
-        fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
-        fig.pos = "", out.width = 672, out.height = NULL, out.extra = NULL, 
-        fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
-        aniopts = "controls,loop", warning = TRUE, error = FALSE, 
-        message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
-        engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        exercise.eval = FALSE, exercise.timelimit = 60, exercise.checker = "function (label = NULL, solution_code = NULL, user_code = NULL, \n    check_code = NULL, envir_result = NULL, evaluate_result = NULL, \n    envir_prep = NULL, last_value = NULL, stage = NULL, ..., \n    solution_eval_fn = NULL) \n{\n    (utils::getFromNamespace(\"check_exercise\", \"gradethis\"))(label = label, \n        solution_code = solution_code, user_code = user_code, \n        check_code = check_code, envir_result = envir_result, \n        evaluate_result = evaluate_result, envir_prep = envir_prep, \n        last_value = last_value, stage = stage, ...)\n}", 
-        exercise.error.check.code = "gradethis_error_checker()", 
-        label = "float-example", exercise = TRUE, code = c("my_float <- ", 
-        "print(my_float)"), out.width.px = 672, out.height.px = 480, 
-        params.src = "float-example, exercise=TRUE", fig.num = 0, 
         exercise.df_print = "default"), engine = "r", version = "4"), class = c("r", 
 "tutorial_exercise")))
 </script>

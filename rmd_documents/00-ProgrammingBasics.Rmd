@@ -82,6 +82,39 @@ Variables can hold other types of information than just numbers! In the coming s
 
 <!-- Maybe add an exercise here, assign your own variable for Mary's friend Miguel. How tall is he? Print it to make sure it's correct. Just make sure they create a float/whatever it's called and print it.--> 
 
+## Floats and Numerics 
+
+<!-- Beginnings of data types. What is a float? 
+
+I just moved this here, you can edit content how you like to make it make sense--> 
+
+<!-- introduction to numeric operations etc. --> 
+
+Integers are whole numbers, what if we want to store something that isn't a whole number, like a measurement? In programming, this is a distinct type of data called a float.
+
+The main different between a float and an integer is that a float stores a number with a decimal point, rather than a whole number.
+
+In R, these are also refered to as a "numeric"
+
+Try storing a decimal to `my_float` and watch the output to confirm it worked. Feel free to use the "hint" button if you need more help.
+
+```{r float-example, exercise=TRUE}
+my_float <- 
+print(my_float)
+```
+
+::: {#float-example-hint}
+**Hint:** Try typing numbers like 3.14, 9.8, or 6.022 after the "\<-"
+:::
+
+```{r float-example-check}
+grade_result(
+  pass_if(~identical(typeof(my_float), "double") & (my_float %% 1 != 0)),
+  fail_if(~identical(typeof(my_float), "double") & !(my_float %% 1 != 0), message="R techinically considers your response a float because there isn't an \"L\" after it, but it is best to try again with a decimal value for the sake of the exercise.")
+)
+```
+
+
 ## Integers
 
 Integers store our countable numbers. 
@@ -137,32 +170,6 @@ print(my_name)
 ```{r string-sentence-check}
 grade_result(
   pass_if(~identical(.result, "My name is Miguel"))
-)
-```
-
-## Floats/Numeric
-
-Integers are whole numbers, what if we want to store something that isn't a whole number, like a measurement? In programming, this is a distinct type of data called a float.
-
-The main different between a float and an integer is that a float stores a number with a decimal point, rather than a whole number.
-
-In R, these are also refered to as a "numeric"
-
-Try storing a decimal to `my_float` and watch the output to confirm it worked. Feel free to use the "hint" button if you need more help.
-
-```{r float-example, exercise=TRUE}
-my_float <- 
-print(my_float)
-```
-
-::: {#float-example-hint}
-**Hint:** Try typing numbers like 3.14, 9.8, or 6.022 after the "\<-"
-:::
-
-```{r float-example-check}
-grade_result(
-  pass_if(~identical(typeof(my_float), "double") & (my_float %% 1 != 0)),
-  fail_if(~identical(typeof(my_float), "double") & !(my_float %% 1 != 0), message="R techinically considers your response a float because there isn't an \"L\" after it, but it is best to try again with a decimal value for the sake of the exercise.")
 )
 ```
 

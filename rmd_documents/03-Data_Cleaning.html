@@ -151,8 +151,9 @@ pre code {
 more used to what it contains. Yay! We finally get to work with
 numbers!</p>
 <p>[add a cute gif of someone celebrating]</p>
-<div id="section-summary-and-plot" class="section level1">
-<h1>1. Summary and Plot</h1>
+<div id="section-getting-your-data-ready-with-factors"
+class="section level1">
+<h1>1. Getting Your Data Ready with Factors</h1>
 <p>R has a very helpful built in function, the <code> summary() </code>
 function, which provides a nice, quick glance at your data. To call it,
 call the <code> summary </code> function with your dataset as an
@@ -277,7 +278,10 @@ Index a column with $ -->
 <p>How did the factor change the way the <code> summary </code> function
 worked with the categorical variables?</p>
 <!-- Textbox -->
-<p>You try it!</p>
+<p>Let’s do this for the rest of the categorical variables!</p>
+<!-- Maybe have a thing. Think about each variable: should it be a factor or not? Most of the character ones should, but alpha notably shouldn't. Somehow point the student in that direction and understand why.-->
+<p>Now that everything’s a factor, let’s try our summary function
+again:</p>
 <pre><code>##               Region                        Site       Latitude    
 ##  Alaska          :134   Haida Gwaii           :59   Min.   :48.67  
 ##  British Columbia:141   Kachemak Bay          :17   1st Qu.:49.07  
@@ -327,8 +331,89 @@ worked with the categorical variables?</p>
 ##  Max.   :6.900  
 ##  NA&#39;s   :8</code></pre>
 </div>
-<div id="section-categorical" class="section level1">
-<h1>2. Categorical</h1>
+<div id="section-handling-date" class="section level1">
+<h1>1.5. Handling “Date”</h1>
+<pre><code>##               Region                        Site       Latitude    
+##  Alaska          :134   Haida Gwaii           :59   Min.   :48.67  
+##  British Columbia:141   Kachemak Bay          :17   1st Qu.:49.07  
+##                         Katmai                :42   Median :53.62  
+##                         Kenai Fjords          :48   Mean   :54.90  
+##                         Pacific Rim           :47   3rd Qu.:59.54  
+##                         Salish Sea            :36   Max.   :60.46  
+##                         W Prince William Sound:26   NA&#39;s   :1      
+##    Longitude           Date            Season   Band_number   
+##  Min.   :-154.5   Min.   :2019-02-28   0: 62   Min.   : 1051  
+##  1st Qu.:-150.1   1st Qu.:2019-06-13   1:213   1st Qu.: 7014  
+##  Median :-132.3   Median :2020-06-22           Median : 9149  
+##  Mean   :-139.1   Mean   :2020-09-19           Mean   :13903  
+##  3rd Qu.:-125.4   3rd Qu.:2021-08-07           3rd Qu.:16516  
+##  Max.   :-123.1   Max.   :2022-07-19           Max.   :72290  
+##  NA&#39;s   :1                                                    
+##     Alpha           Age_class   Eye_fleck   Sex     Bander        Mass      
+##  Length:275         ASY:264   3a     : 31   F:138   BR: 33   Min.   :495.0  
+##  Class :character   SY :  6   1a     : 25   M:137   CR: 33   1st Qu.:555.0  
+##  Mode  :character   TY :  5   1b     : 23           HR: 56   Median :576.0  
+##                               3b     : 23           JK: 10   Mean   :581.9  
+##                               2c     : 22           LW:130   3rd Qu.:603.5  
+##                               1c     : 21           MM: 13   Max.   :720.0  
+##                               (Other):130                    NA&#39;s   :8      
+##       Wing            Tail            Toe            Tarsus     
+##  Min.   :228.0   Min.   : 80.0   Min.   :39.00   Min.   :47.10  
+##  1st Qu.:245.0   1st Qu.: 98.0   1st Qu.:43.00   1st Qu.:51.90  
+##  Median :250.0   Median :101.0   Median :44.00   Median :53.30  
+##  Mean   :249.5   Mean   :101.3   Mean   :44.27   Mean   :53.25  
+##  3rd Qu.:254.0   3rd Qu.:105.0   3rd Qu.:45.00   3rd Qu.:54.60  
+##  Max.   :280.0   Max.   :115.0   Max.   :50.00   Max.   :61.30  
+##  NA&#39;s   :3       NA&#39;s   :10      NA&#39;s   :7       NA&#39;s   :5      
+##    Max_tarsus        Culmen        Head_bill       Bill_depth   
+##  Min.   :53.20   Min.   :64.00   Min.   :107.5   Min.   :11.10  
+##  1st Qu.:61.10   1st Qu.:69.80   1st Qu.:113.9   1st Qu.:12.10  
+##  Median :62.90   Median :73.55   Median :117.7   Median :12.59  
+##  Mean   :62.72   Mean   :73.48   Mean   :117.6   Mean   :12.66  
+##  3rd Qu.:64.90   3rd Qu.:76.86   3rd Qu.:121.0   3rd Qu.:13.10  
+##  Max.   :69.70   Max.   :86.80   Max.   :137.0   Max.   :14.40  
+##  NA&#39;s   :6       NA&#39;s   :5       NA&#39;s   :15      NA&#39;s   :9      
+##    Bill_width        Bill_tip    
+##  Min.   : 7.100   Min.   :3.300  
+##  1st Qu.: 8.300   1st Qu.:4.715  
+##  Median : 8.800   Median :5.150  
+##  Mean   : 9.138   Mean   :5.135  
+##  3rd Qu.: 9.300   3rd Qu.:5.500  
+##  Max.   :14.210   Max.   :6.900  
+##  NA&#39;s   :6        NA&#39;s   :8</code></pre>
+</div>
+<div id="section-basic-data-cleaning" class="section level1">
+<h1>2. Basic Data Cleaning</h1>
+<p>Try <code> duplicated() </code> function.</p>
+<pre><code>##   [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+##  [13] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+##  [25] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+##  [37] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+##  [49] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+##  [61] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+##  [73] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+##  [85] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+##  [97] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [109] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [121] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [133] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [145] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [157] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [169] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [181] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [193] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [205] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [217] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [229] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [241] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [253] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [265] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE</code></pre>
+<p>Returns a bunch of falses. Easy for a truth to get lost in there!</p>
+<!-- Mention which function in lesson 0, or we can split that up -->
+<pre><code>## integer(0)</code></pre>
+</div>
+<div id="section-cleaning-the-categorical-data" class="section level1">
+<h1>2. Cleaning the Categorical Data</h1>
 </div>
 <div id="section-numerical---imputing-missing" class="section level1">
 <h1>3. Numerical -&gt; imputing missing</h1>
