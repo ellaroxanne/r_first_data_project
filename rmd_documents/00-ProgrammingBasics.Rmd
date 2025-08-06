@@ -18,38 +18,69 @@ mary_age <- 22L
 
 What are variables?
 
-A variable is a named container for data.
+A variable is a named container for data. 
 
 <!-- Uhh home canners write the name of the stuff and the date that's being canned. Think of it like that. You're telling the computer "name something and keep the information about it" so you don't have to --> 
 
+Meet Mary. 
+
+<!-- doodle or something cute -->
+
+We want to store some information about her, that we want to be able to easily access. 
+
+<!-- Doodle of Mary saying she's 22 --> 
 Say Marys's age is 22, lets make a variable to store that information and be able to access it later.
+In R, we use the symbol <code> <- </code> to create variables. 
+The fancy computing term for this, <code> <- </code> is <b> assignment operator </b>. 
 
 ```{r, eval=TRUE, echo = TRUE}
-mary_age <- 22L
+mary_age <- 22
 ```
 
-Let's double check that this is working correctly. R has a built in print function that will show us what it looks like. Click "Run Code".
+Let's double check that we saved her age correctly. R has a built in <code> print </code> function that will, as the name suggests, print a value. Click "Run Code" to see it in action.
 
 ```{r, print_var, exercise=TRUE, exercise.setup = "prepare-variables"}
 print(mary_age)
 ```
 
-Now let's say we want to know what her age is in 5 years.
+Great! Since it printed 22, we know that <code> mary_age </code> is saved correctly. 
 
-```{r, first_var, exercise=TRUE, exercise.setup = "prepare-variables"}
-print(mary_age + 5L)
+How old will she be in 5 years? You can probably do this in your head, but let's see if the computer can do it. 
+
+```{r, first_var, exercise=TRUE, exercise.setup = "prepare-variables", eval=TRUE, echo= TRUE}
+print(mary_age + 5)
 ```
 
-What if Mary's age was incorrect? We can update the value to correct this
+Notice that it automatically computed the number [CHANGE THE WORDING] based on the value of our variable <code> mary_age </code>. 
+This is the advantage of using variables: it allows our code to be dynamic. 
+
+Why is this dynamicness (dynamicity? idk) important? 
+
+Well, Mary has a confession to make. 
+
+<!-- Mary doodle, she lied about her age! She's actually 55. -->
+
+Oh boy, how do we handle this?
+
+We can simply change the variable value. This is called <b> what's the vocab. reassigning </b>. 
 
 ```{r, update_var, exercise=TRUE}
-mary_age <- 55L
+mary_age <- 55
 print(mary_age)
 ```
 
-<!-- Maybe add like a thing of "copy/paste the same code from the earlier block. Look! We didn't change our code, but mary_age + 5 is updated. That's one of the advantages of using variables. You can easily change the value without having to manually go back and mess with blah blah blah code. --> 
+Copy and paste the same code from the earlier block, where we computed Mary's age in five years. 
+
+<!-- Maybe add like a thing of "copy/paste the same code from the earlier block. Look! We didn't change our code, but mary_age + 5 is updated. That's one of the advantages of using variables. You can easily change the value without having to manually go back and mess with blah blah blah code. 
+I can't figure out how to add the code block. --> 
+
+This is a small example but it's illustrative of something important: by using variables, you can quickly adjust your code without having to go through and manually rename everything. 
+
+<!-- Ella make this more eloquent --> 
 
 Variables can hold other types of information than just numbers! In the coming sections we will explore several other types of information we can store in variables.
+
+<!-- Maybe add an exercise here, assign your own variable for Mary's height in inches. Print it to make sure it's correct. Just make sure they create a float/whatever it's called and print it.--> 
 
 ## Integers
 
