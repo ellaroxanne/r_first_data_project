@@ -71,8 +71,7 @@ He ate two pieces of pizza!
 
 rep(), : sequencing
 
-More just worth mentioning. 
-
+More just worth mentioning. Not to worry about.
 
 ## Lists
 
@@ -100,3 +99,13 @@ Helpful for data, most similar to excel spreadsheets
 We will work with dataframes more. 
 
 Each column is like a vector and contains same data type
+
+## Factors
+
+What is a factor? Why important? 
+
+Start with a vector/list example. 
+Then give the dataframe. 
+
+Go over levels().
+Compare length() on a factor vs a list.

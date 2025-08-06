@@ -19,7 +19,7 @@ Yay! We finally get to work with numbers!
 
 [add a cute gif of someone celebrating]
 
-# 1. Getting Your Data Ready with Factors
+# 1. Preparing Your Data
 
 R has a very helpful built in function, the <code> summary() </code> function, which provides a nice, quick glance at your data. 
 To call it, call the <code> summary </code> function with your dataset as an argument.
