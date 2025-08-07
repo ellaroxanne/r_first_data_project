@@ -5,7 +5,7 @@ runtime: shiny_prerendered
 
 ```{r setup, include=FALSE}
 library(learnr)
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
 tutorial_options(exercise.eval = FALSE)
 gradethis::gradethis_setup()
 ```
@@ -22,10 +22,12 @@ Yay! We finally get to work with numbers!
 # Preparing Your Data - Factors
 
 R has a very helpful built in function, the <code> summary() </code> function, which provides a nice, quick glance at your data. 
+
 To call it, call the <code> summary </code> function with your dataset as an argument.
 Remember, our dataset as it is right now is labelled <code> raw_data </code>. 
 
-```{r}
+```{r echo=TRUE}
+# I want this bit to be interactive. The learner will type in summary(raw_data) and run
 summary(raw_data)
 ```
 
@@ -46,19 +48,43 @@ What information does it display about the categorical variables?
 <!-- Textbox -->
 
 You may notice, the information it displays for categorical variables is somewhat limited. 
-Since categorical variables are usually different ``buckets'' (check), think of a way we've learned to describe them.
+Since categorical variables are usually different ``buckets,'' and because they are so common in statistics, R has a special built-in method (check) to help users like us handle categorical variables differently.
 
-That's right! Factors. 
+These are called <b> factors </b>. 
+
+<!-- I'm thinking just have a mini lesson that goes more in detail about factor() function arguments, factor vs. as.factor(), etc.  -->
+
+<!-- Definition box -->
 
 Let's start by making the <code> Region </code> variable a factor. 
 
-<!-- Progressive hints: as.factor() function
+First, let's take a look at the Region column. 
+
+```{r}
+print(raw_data$Region)
+```
+
+What kind of vector is the Region column? 
+
+<!-- Multiple choice: numeric, bool, character, idk --> 
+
+In order to convert a character vector, like Region, to a factor, we use the function <code> factor() </code>. 
+
+The <code> as.factor() </code> function takes in the character vector, and generates a set of <b> levels </b>, which contains the different possible values of the categorical variable. 
+
+<!-- Progressive hints: factor() function
 Arguments is the column
 Index a column with $ -->
 
 ```{r}
-raw_data$Region <- as.factor(raw_data$Region)
+raw_data$Region <- factor(raw_data$Region)
 ```
+
+```{r}
+print(raw_data$Region)
+```
+
+Now, in addition to printing the character vector, it will print Levels, for each of the possible values. 
 
 Now, let's take a look at how this changed the summary function:
 
@@ -66,20 +92,24 @@ Now, let's take a look at how this changed the summary function:
 summary(raw_data)
 ```
 
-How did the factor change the way the <code> summary </code> function worked with the categorical variables? 
+How did the factor change the way the <code> summary </code> function worked with the categorical variables?
 
 <!-- Textbox -->
+
+What about the ALPHA variable? Should that be a factor? 
+
+<!-- Textbox. Basically no, because it's not categorical, even though it's a character vector. --> 
 
 Let's do this for the rest of the categorical variables!
 
 <!-- Maybe have a thing. Think about each variable: should it be a factor or not? Most of the character ones should, but alpha notably shouldn't. Somehow point the student in that direction and understand why.--> 
 ```{r}
-raw_data$Site <- as.factor(raw_data$Site)
-raw_data$Season <- as.factor(raw_data$Season)
-raw_data$Age_class <- as.factor(raw_data$Age_class)
-raw_data$Eye_fleck <- as.factor(raw_data$Eye_fleck)
-raw_data$Sex <- as.factor(raw_data$Sex)
-raw_data$Bander <- as.factor(raw_data$Bander)
+raw_data$Site <- factor(raw_data$Site)
+raw_data$Season <- factor(raw_data$Season)
+raw_data$Age_class <- factor(raw_data$Age_class)
+raw_data$Eye_fleck <- factor(raw_data$Eye_fleck)
+raw_data$Sex <- factor(raw_data$Sex)
+raw_data$Bander <- factor(raw_data$Bander)
 ```
 
 Now that everything's a factor, let's try our summary function again:
@@ -216,5 +246,3 @@ If we're only trying to study the Wing value, we've just throw out up to 7 perfe
 This could also introduce bias, if the missing values were not randomly missing. 
 
 <!-- Can o' worms ^ -->
-
-
