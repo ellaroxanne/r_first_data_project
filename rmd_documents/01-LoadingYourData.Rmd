@@ -20,7 +20,8 @@ Right now, the data is stored in a .csv file. If you've ever worked with a sprea
 
 .csv stands for "comma-separated values." .csv files in practice work very similar to tables like you see in Excel. 
 <!-- Make this link nice and clickable- maybe even a big button -->
-Take a look at a raw csv file here: https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/BLOY_morphology_AlaskaBC.csv. 
+Take a look at a raw csv file here:
+<button onclick="window.location.href='https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/data_and_metadata/BLOY_morphology_AlaskaBC.csv';">BLOY Morphology Data</button>
 
 ## Question 1 
 Why do you think it's called a comma-separated value file? 
@@ -29,7 +30,7 @@ Why do you think it's called a comma-separated value file?
 
 R, and many other computer programs, does a good job at organizing a csv file into a dataframe, which is similar to an Excel spreadsheet or other tabular (table-like) form of organizing data. We just need the computer to read it-- to turn it from this raw file into a nice table. 
 
-What better function than read.csv()!
+What better function than <code> read.csv() </code>!
 
 ## Your Task: 
 Write a piece of code in R that uses the <code> read.csv() </code> function to save a variable named <code> raw_data </code>. 
@@ -43,7 +44,7 @@ To do so in R, you start with your variable name, then an ``arrow'' <code> <- </
 
 So, a code for my favorite number would be:
 
-```{r}
+```{r echo = TRUE}
 ellas_favorite_number <- 2
 ```
 
@@ -60,7 +61,7 @@ print(ellas_favorite_number)
 ```
 (Hint: If this isn't working, make sure you've run your previous block, where ellas_favorite_number is initialized.)
 
-Try it with yours!
+Return to the excerise and try it with yours!
 
 <!-- Space for user to write "print(my_favorite_number)"-->
 
@@ -78,7 +79,7 @@ Let's start by trying to make a variable with the link we have, https://raw.gith
 
 <!-- Have them copy this code, that's down below-->
 
-```{r}
+```{r eval=FALSE}
 first_try <- "https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/BLOY_morphology_AlaskaBC.csv"
 ```
 
@@ -90,7 +91,7 @@ The quotation marks around them essentially tell the computer, "this is a word."
 
 Let's use our <code> print </code> trick to see that the variable saved the way we wanted.
 
-```{r}
+```{r eval=FALSE}
 print(first_try)
 ```
 
@@ -109,7 +110,7 @@ Use the <code> read.csv() </code> function to create a variable named raw_data u
 
 <!-- This is our answer code; I want an interactive code box where they can try. The answer is revealed on the end or if they need a hint-->
 
-```{r}
+```{r eval=FALSE}
 raw_data <- read.csv("https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/BLOY_morphology_AlaskaBC.csv")
 ```
 
@@ -117,7 +118,7 @@ Alright! It looks like we've loaded our data, let's try our <code>print </code> 
 
 <!-- Have the user type this 
 I have it commented out just bc it's huge in the file -->
-```{r}
+```{r eval=FALSE}
 # print(raw_data)
 ```
 
@@ -133,7 +134,7 @@ The first function we'll take a look at is the <code> head </code> function.
 
 Let's start by getting a basic feel for the data with the head() function. Try it now:
 
-```{r}
+```{r eval=FALSE}
 head(raw_data)
 ```
 
@@ -151,7 +152,7 @@ It shows us all of the variables measured, and gives us an idea of what they may
 
 Another helpful function when getting to know your data is <code> colnames() </code>. Try it now.
 
-```{r}
+```{r eval=FALSE}
 colnames(raw_data)
 ```
 
