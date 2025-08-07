@@ -51,7 +51,9 @@ ellas_favorite_number <- 2
 
 Try running your own, and see what happens!
 
-<!-- Space for user to try one -->
+```{r, update_var, exercise = TRUE}
+test <-  4
+```
 
 Now, let's double-check that variable saved correctly. 
 A straightforward waya to do this with simple variables is the <code> print </code> function.
