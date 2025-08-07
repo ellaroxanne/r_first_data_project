@@ -58,7 +58,7 @@ These are called <b> factors </b>.
 
 Let's start by making the <code> Region </code> variable a factor. 
 
-First, let's take a look at the Region column. 
+First, let's take a look at the Region column on its own. 
 
 ```{r}
 print(raw_data$Region)
@@ -96,9 +96,13 @@ How did the factor change the way the <code> summary </code> function worked wit
 
 <!-- Textbox -->
 
-What about the ALPHA variable? Should that be a factor? 
+Two of the character vectors in our dataframe is NOT a good candidate for being a factor. 
+Can you tell which ones they are? 
+<!-- Textbox. looking for alpha 
+Once they get it right, make it so that a new one opens. Why is it not categorical, even though it's a character?-->
+<!-- Textbox. Alpha. Basically no, because it's not categorical, even though it's a character vector. 
 
-<!-- Textbox. Basically no, because it's not categorical, even though it's a character vector. --> 
+Date is another one--> 
 
 Let's do this for the rest of the categorical variables!
 
