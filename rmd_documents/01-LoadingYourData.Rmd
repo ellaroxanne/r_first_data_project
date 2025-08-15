@@ -42,31 +42,26 @@ Let's start by making a variable called <code> my_favorite_number </code>.
 
 To do so in R, you start with your variable name, then an ``arrow'' <code> <- </code>, and then the value you want it to be. 
 
-So, a code for my favorite number would be:
+So, code for my favorite number would be:
 
-```{r echo = TRUE}
+```{r ellasNum, exercise = TRUE}
 ellas_favorite_number <- 2
 ```
 
 
 Try running your own, and see what happens!
 
-```{r, update_var, exercise = TRUE}
-test <-  4
+```{r, myVar, exercise = TRUE}
 ```
 
 Now, let's double-check that variable saved correctly. 
-A straightforward waya to do this with simple variables is the <code> print </code> function.
+A straightforward way to do this with simple variables is the <code> print </code> function.
 
-```{r}
+```{r, printFunc, exercise = TRUE, exercise.setup = "ellasNum"}
 print(ellas_favorite_number)
 ```
-(Hint: If this isn't working, make sure you've run your previous block, where ellas_favorite_number is initialized.)
 
-Return to the excerise and try it with yours!
-
-<!-- Space for user to write "print(my_favorite_number)"-->
-
+Return to the exercise and try it with yours!
 <!-- Exercise with a string?-->
 
 Congratulations! You've made your first variable. 
@@ -77,12 +72,13 @@ Our eventual goal is to store the information contained in our .csv as a variabl
 
 But how can we extract this information? 
 
-Let's start by trying to make a variable with the link we have, https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/BLOY_morphology_AlaskaBC.csv. 
+Let's start by trying to make a variable with the link we have, https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/data_and_metadata/BLOY_morphology_AlaskaBC.csv. 
 
+This is the link that was contained within the button in the beginning of this lesson
 <!-- Have them copy this code, that's down below-->
 
-```{r eval=FALSE}
-first_try <- "https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/BLOY_morphology_AlaskaBC.csv"
+```{r firstTry, exercise = TRUE}
+first_try <- "https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/data_and_metadata/BLOY_morphology_AlaskaBC.csv"
 ```
 
 Why the quotation marks? 
@@ -93,7 +89,7 @@ The quotation marks around them essentially tell the computer, "this is a word."
 
 Let's use our <code> print </code> trick to see that the variable saved the way we wanted.
 
-```{r eval=FALSE}
+```{r printFirst, exercise = TRUE, exercise.setup = "firstTry"}
 print(first_try)
 ```
 
@@ -112,16 +108,37 @@ Use the <code> read.csv() </code> function to create a variable named raw_data u
 
 <!-- This is our answer code; I want an interactive code box where they can try. The answer is revealed on the end or if they need a hint-->
 
-```{r eval=FALSE}
-raw_data <- read.csv("https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/BLOY_morphology_AlaskaBC.csv")
+```{r secondTry, exercise = TRUE, exercise.reveal_solution = TRUE}
+
+```
+
+```{r secondTry-solution, exercise.reveal_solution = TRUE}
+raw_data <- read.csv("https://raw.githubusercontent.com/ellaroxanne/r_first_data_project/refs/heads/main/data_and_metadata/BLOY_morphology_AlaskaBC.csv")
+```
+
+```{r, secondTry-code-check}
+grade_code()
 ```
 
 Alright! It looks like we've loaded our data, let's try our <code>print </code> trick to take a look:
 
 <!-- Have the user type this 
 I have it commented out just bc it's huge in the file -->
-```{r eval=FALSE}
-# print(raw_data)
+
+```{r printData, exercise.reveal_solution = TRUE, exercise=TRUE, exercise.setup = "secondTry-solution"}
+
+```
+
+```{r, printData-code-check}
+grade_code()
+```
+
+<div id="printData-hint">
+**Hint:** We're already tried this, try looking at the last time we tried print()
+</div>
+
+```{r printData-solution}
+print(raw_data)
 ```
 
 Woah! That's huge!
@@ -136,7 +153,7 @@ The first function we'll take a look at is the <code> head </code> function.
 
 Let's start by getting a basic feel for the data with the head() function. Try it now:
 
-```{r eval=FALSE}
+```{r headFunction, exercise.reveal_solution = TRUE, exercise=TRUE, exercise.setup = "secondTry-solution"}
 head(raw_data)
 ```
 
@@ -161,6 +178,13 @@ colnames(raw_data)
 ### Question: What information do you get from <code> colnames() </code>? 
 
 <!-- Text box. Eventual answer: a list of each variable that was collected for this data set--> 
+
+<textarea cols="50" rows="10"> </textarea>
+
+<button onclick="document.getElementById('section-q1-ans').style.display='block'">Reveal Answer</button>
+<div id="q1-ans" style="display:none;">
+  <p>By using the head() function, we can peek at the first few columns of data, giving us an idea of the varibles included in this data set.</p>
+</div>
 
 ### Food for Thought: When do you use colnames() in addition to head()? 
 
